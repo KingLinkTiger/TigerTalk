@@ -29,6 +29,7 @@ public class ClientThread extends Thread {
 			os.write(new String("Welcome!").getBytes());
 			is =  new BufferedReader(new InputStreamReader(s.getInputStream()));
 			setupDone = true;
+			System.out.println("User Connected!");
 			while (running){
 					if (!s.isConnected()){//Disconnect
 						running = false;
