@@ -25,8 +25,8 @@ public class ClientThread extends Thread {
 	public void run(){
 		BufferedReader is;
 		try {
-			os.write(new String("Welcome!").getBytes());
 			os = s.getOutputStream();
+			os.write(new String("Welcome!").getBytes());
 			is =  new BufferedReader(new InputStreamReader(s.getInputStream()));
 			setupDone = true;
 			while (running){
