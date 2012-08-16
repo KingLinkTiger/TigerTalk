@@ -163,15 +163,32 @@ namespace ChatServer
 		{
 			SocketChatClient client = (SocketChatClient)ar.AsyncState;
 			byte [] aryRet = client.GetRecievedData( ar );
+            
 
 			// If no data was recieved then the connection is probably dead
 			if( aryRet.Length < 1 )
 			{
 				Console.WriteLine( "Client {0}, disconnected", client.Sock.RemoteEndPoint );
 				client.Sock.Close();
-				m_aryClients.Remove( client );      				
+				m_aryClients.Remove( client );
 				return;
 			}
+            // Data is okay, make it into a string
+            string fromClient = "";
+            foreach (byte b in aryRet)
+            {
+                fromClient += (char)b;
+            }
+
+            if (fromClient[0] == '/')// Command
+            {
+                string command = fromClient.Substring(1);
+                string[] tokens = command.Split(' ');
+                if (tokens[0] == "list")
+                {
+                    
+                }
+            }
 
 			// Send the recieved data to all clients (including sender for echo)
 			foreach( SocketChatClient clientSend in m_aryClients )
