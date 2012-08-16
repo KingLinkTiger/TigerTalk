@@ -31,9 +31,7 @@ namespace ChatClient
 		private byte []			m_byBuff = new byte[256];	// Recieved data buffer
 		private event AddMessage m_AddMessage;				// Add Message Event handler for Form
 
-		// Wizard generated code
-		private System.Windows.Forms.Button m_btnConnect;
-		private System.Windows.Forms.TextBox m_tbServerAddress;
+        // Wizard generated code
 		private System.Windows.Forms.ListBox m_lbRecievedData;
 		private System.Windows.Forms.TextBox m_tbMessage;
 		private System.Windows.Forms.Button m_btnSend;
@@ -82,44 +80,22 @@ namespace ChatClient
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.m_tbServerAddress = new System.Windows.Forms.TextBox();
             this.m_tbMessage = new System.Windows.Forms.TextBox();
-            this.m_btnConnect = new System.Windows.Forms.Button();
             this.m_lbRecievedData = new System.Windows.Forms.ListBox();
             this.m_btnSend = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // m_tbServerAddress
-            // 
-            this.m_tbServerAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_tbServerAddress.Location = new System.Drawing.Point(8, 8);
-            this.m_tbServerAddress.Name = "m_tbServerAddress";
-            this.m_tbServerAddress.Size = new System.Drawing.Size(204, 20);
-            this.m_tbServerAddress.TabIndex = 1;
-            this.m_tbServerAddress.Text = "24.229.41.95";
-            // 
             // m_tbMessage
             // 
-            this.m_tbMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.m_tbMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_tbMessage.Location = new System.Drawing.Point(8, 37);
+            this.m_tbMessage.Location = new System.Drawing.Point(0, 321);
             this.m_tbMessage.Name = "m_tbMessage";
-            this.m_tbMessage.Size = new System.Drawing.Size(205, 20);
+            this.m_tbMessage.Size = new System.Drawing.Size(238, 20);
             this.m_tbMessage.TabIndex = 3;
             this.m_tbMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.m_tbMessage_keyDown);
-            // 
-            // m_btnConnect
-            // 
-            this.m_btnConnect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_btnConnect.Location = new System.Drawing.Point(228, 8);
-            this.m_btnConnect.Name = "m_btnConnect";
-            this.m_btnConnect.Size = new System.Drawing.Size(75, 23);
-            this.m_btnConnect.TabIndex = 0;
-            this.m_btnConnect.Text = "Connect";
-            this.m_btnConnect.Click += new System.EventHandler(this.m_btnConnect_Click);
             // 
             // m_lbRecievedData
             // 
@@ -127,15 +103,15 @@ namespace ChatClient
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.m_lbRecievedData.IntegralHeight = false;
-            this.m_lbRecievedData.Location = new System.Drawing.Point(0, 94);
+            this.m_lbRecievedData.Location = new System.Drawing.Point(0, 35);
             this.m_lbRecievedData.Name = "m_lbRecievedData";
-            this.m_lbRecievedData.Size = new System.Drawing.Size(311, 290);
+            this.m_lbRecievedData.Size = new System.Drawing.Size(311, 280);
             this.m_lbRecievedData.TabIndex = 2;
             // 
             // m_btnSend
             // 
-            this.m_btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_btnSend.Location = new System.Drawing.Point(228, 36);
+            this.m_btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.m_btnSend.Location = new System.Drawing.Point(236, 319);
             this.m_btnSend.Name = "m_btnSend";
             this.m_btnSend.Size = new System.Drawing.Size(75, 23);
             this.m_btnSend.TabIndex = 4;
@@ -144,7 +120,7 @@ namespace ChatClient
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(43, 69);
+            this.textBox1.Location = new System.Drawing.Point(32, 9);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
@@ -152,7 +128,7 @@ namespace ChatClient
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 69);
+            this.label1.Location = new System.Drawing.Point(-3, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 6;
@@ -161,18 +137,17 @@ namespace ChatClient
             // FormMain
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(312, 385);
+            this.ClientSize = new System.Drawing.Size(312, 343);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.m_btnSend);
             this.Controls.Add(this.m_tbMessage);
             this.Controls.Add(this.m_lbRecievedData);
-            this.Controls.Add(this.m_tbServerAddress);
-            this.Controls.Add(this.m_btnConnect);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form1";
+            this.Text = "Tiger Chat";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.FormMain_Closing);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +171,7 @@ namespace ChatClient
 		/// <param name="e"></param>
 		private void m_btnConnect_Click(object sender, System.EventArgs e)
 		{
+            /*
 			Cursor cursor = Cursor.Current;
 			Cursor.Current = Cursors.WaitCursor;
 			try
@@ -212,7 +188,7 @@ namespace ChatClient
 				m_sock = new Socket( AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp );	
 
 				// Define the Server address and port
-				IPEndPoint epServer = new IPEndPoint(  IPAddress.Parse( m_tbServerAddress.Text ), 399 );
+				//IPEndPoint epServer = new IPEndPoint(  IPAddress.Parse( m_tbServerAddress.Text ), 399 );
 
 				// Connect to the server blocking method and setup callback for recieved data
 				// m_sock.Connect( epServer );
@@ -228,6 +204,7 @@ namespace ChatClient
 				MessageBox.Show( this, ex.Message, "Server Connect failed!" );
 			}
 			Cursor.Current = cursor;
+            */
 		}
 
 		public void OnConnect( IAsyncResult ar )
@@ -363,5 +340,41 @@ namespace ChatClient
 				MessageBox.Show( this, ex.Message, "Send Message Failed!" );
 			}
 		}
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            Cursor cursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
+            try
+            {
+                // Close the socket if it is still open
+                if (m_sock != null && m_sock.Connected)
+                {
+                    m_sock.Shutdown(SocketShutdown.Both);
+                    System.Threading.Thread.Sleep(10);
+                    m_sock.Close();
+                }
+
+                // Create the socket object
+                m_sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+                // Define the Server address and port
+                IPEndPoint epServer = new IPEndPoint(IPAddress.Parse("24.229.41.95"), 399);
+
+                // Connect to the server blocking method and setup callback for recieved data
+                // m_sock.Connect( epServer );
+                // SetupRecieveCallback( m_sock );
+
+                // Connect to server non-Blocking method
+                m_sock.Blocking = false;
+                AsyncCallback onconnect = new AsyncCallback(OnConnect);
+                m_sock.BeginConnect(epServer, onconnect, m_sock);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.Message, "Server Connect failed!");
+            }
+            Cursor.Current = cursor;
+        }
 	}
 }
