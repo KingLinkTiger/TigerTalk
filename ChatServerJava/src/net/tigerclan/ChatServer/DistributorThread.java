@@ -16,6 +16,11 @@ public class DistributorThread extends Thread {
 			if (chats.peek() != null){
 				String chat = chats.poll();
 				for (ClientThread th : thread_pool){
+					if (th.running == false){//Needs to be cleaned up
+						thread_pool.remove(th);
+					}
+				}
+				for (ClientThread th : thread_pool){
 					th.write(chat);
 				}
 			}else{// Nothing to do
