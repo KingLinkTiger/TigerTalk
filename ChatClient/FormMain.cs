@@ -171,6 +171,7 @@ namespace ChatClient
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox2.Size = new System.Drawing.Size(311, 305);
             this.textBox2.TabIndex = 9;
             // 
@@ -197,7 +198,7 @@ namespace ChatClient
             // tigerClanToolStripMenuItem
             // 
             this.tigerClanToolStripMenuItem.Name = "tigerClanToolStripMenuItem";
-            this.tigerClanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tigerClanToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.tigerClanToolStripMenuItem.Text = "TigerClan";
             this.tigerClanToolStripMenuItem.Click += new System.EventHandler(this.tigerClanToolStripMenuItem_Click);
             // 
