@@ -34,21 +34,29 @@ public class ClientThread extends Thread {
 						break;
 					}
 					String line = is.readLine();
-					chats.add(line);
+					if (line != null){
+						chats.add(line);
+					}else{// This means someone disconnected.
+						running = false;
+						break;
+					}
 					System.out.println(line);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("FAILURE ON THREAD "+id+"!!");
+			System.out.println("FAILURE ON READ: THREAD "+id+"!!");
 			running = false;
 		}
 		System.out.println("Client closed: "+id);
 	}
 	public void write(String input){
 		try {
-			if (setupDone) os.write(input.getBytes());
+			if (setupDone){
+				os.write(input.getBytes());
+				os.write('\n');
+			}
 		} catch (IOException e) {
-			System.out.println("FAILURE ON THREAD "+id+"!!");
+			System.out.println("FAILURE ON WRITE: THREAD "+id+"!!");
 		}
 	}
 }
