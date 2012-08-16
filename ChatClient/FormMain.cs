@@ -37,6 +37,8 @@ namespace ChatClient
 		private System.Windows.Forms.Button m_btnSend;
         private TextBox textBox1;
         private Label label1;
+        private Button m_btnConnect;
+        private TextBox m_tbServerAddress;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -85,6 +87,8 @@ namespace ChatClient
             this.m_btnSend = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.m_btnConnect = new System.Windows.Forms.Button();
+            this.m_tbServerAddress = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // m_tbMessage
@@ -134,10 +138,30 @@ namespace ChatClient
             this.label1.TabIndex = 6;
             this.label1.Text = "Nick";
             // 
+            // m_btnConnect
+            // 
+            this.m_btnConnect.Location = new System.Drawing.Point(286, 7);
+            this.m_btnConnect.Name = "m_btnConnect";
+            this.m_btnConnect.Size = new System.Drawing.Size(25, 23);
+            this.m_btnConnect.TabIndex = 7;
+            this.m_btnConnect.Text = "con";
+            this.m_btnConnect.UseVisualStyleBackColor = true;
+            this.m_btnConnect.Click += new System.EventHandler(this.m_btnConnect_Click);
+            // 
+            // m_tbServerAddress
+            // 
+            this.m_tbServerAddress.Location = new System.Drawing.Point(180, 9);
+            this.m_tbServerAddress.Name = "m_tbServerAddress";
+            this.m_tbServerAddress.Size = new System.Drawing.Size(100, 20);
+            this.m_tbServerAddress.TabIndex = 8;
+            this.m_tbServerAddress.Text = "192.168.1.1";
+            // 
             // FormMain
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(312, 343);
+            this.Controls.Add(this.m_tbServerAddress);
+            this.Controls.Add(this.m_btnConnect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.m_btnSend);
@@ -171,7 +195,6 @@ namespace ChatClient
 		/// <param name="e"></param>
 		private void m_btnConnect_Click(object sender, System.EventArgs e)
 		{
-            /*
 			Cursor cursor = Cursor.Current;
 			Cursor.Current = Cursors.WaitCursor;
 			try
@@ -188,7 +211,7 @@ namespace ChatClient
 				m_sock = new Socket( AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp );	
 
 				// Define the Server address and port
-				//IPEndPoint epServer = new IPEndPoint(  IPAddress.Parse( m_tbServerAddress.Text ), 399 );
+				IPEndPoint epServer = new IPEndPoint(  IPAddress.Parse( m_tbServerAddress.Text ), 399 );
 
 				// Connect to the server blocking method and setup callback for recieved data
 				// m_sock.Connect( epServer );
@@ -204,7 +227,6 @@ namespace ChatClient
 				MessageBox.Show( this, ex.Message, "Server Connect failed!" );
 			}
 			Cursor.Current = cursor;
-            */
 		}
 
 		public void OnConnect( IAsyncResult ar )
@@ -343,6 +365,7 @@ namespace ChatClient
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            /*
             Cursor cursor = Cursor.Current;
             Cursor.Current = Cursors.WaitCursor;
             try
@@ -375,6 +398,7 @@ namespace ChatClient
                 MessageBox.Show(this, ex.Message, "Server Connect failed!");
             }
             Cursor.Current = cursor;
+             */
         }
 	}
 }
