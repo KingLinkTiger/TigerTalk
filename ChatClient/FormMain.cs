@@ -32,13 +32,20 @@ namespace ChatClient
 		private event AddMessage m_AddMessage;				// Add Message Event handler for Form
 
         // Wizard generated code
-		private System.Windows.Forms.ListBox m_lbRecievedData;
 		private System.Windows.Forms.TextBox m_tbMessage;
 		private System.Windows.Forms.Button m_btnSend;
         private TextBox textBox1;
         private Label label1;
         private Button m_btnConnect;
         private TextBox m_tbServerAddress;
+        private TextBox textBox2;
+        private ColorDialog colorDialog1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem connectToolStripMenuItem;
+        private ToolStripMenuItem tigerClanToolStripMenuItem;
+        private ToolStripMenuItem colorToolStripMenuItem;
+        private ToolStripMenuItem textColorToolStripMenuItem;
+        private ToolStripMenuItem backgroundColorToolStripMenuItem;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -83,39 +90,36 @@ namespace ChatClient
 		private void InitializeComponent()
 		{
             this.m_tbMessage = new System.Windows.Forms.TextBox();
-            this.m_lbRecievedData = new System.Windows.Forms.ListBox();
             this.m_btnSend = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.m_btnConnect = new System.Windows.Forms.Button();
             this.m_tbServerAddress = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tigerClanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_tbMessage
             // 
             this.m_tbMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_tbMessage.Location = new System.Drawing.Point(0, 321);
+            this.m_tbMessage.Location = new System.Drawing.Point(0, 374);
             this.m_tbMessage.Name = "m_tbMessage";
             this.m_tbMessage.Size = new System.Drawing.Size(238, 20);
             this.m_tbMessage.TabIndex = 3;
             this.m_tbMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.m_tbMessage_keyDown);
             // 
-            // m_lbRecievedData
-            // 
-            this.m_lbRecievedData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_lbRecievedData.IntegralHeight = false;
-            this.m_lbRecievedData.Location = new System.Drawing.Point(0, 35);
-            this.m_lbRecievedData.Name = "m_lbRecievedData";
-            this.m_lbRecievedData.Size = new System.Drawing.Size(311, 280);
-            this.m_lbRecievedData.TabIndex = 2;
-            // 
             // m_btnSend
             // 
             this.m_btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_btnSend.Location = new System.Drawing.Point(236, 319);
+            this.m_btnSend.Location = new System.Drawing.Point(236, 372);
             this.m_btnSend.Name = "m_btnSend";
             this.m_btnSend.Size = new System.Drawing.Size(75, 23);
             this.m_btnSend.TabIndex = 4;
@@ -124,7 +128,7 @@ namespace ChatClient
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 9);
+            this.textBox1.Location = new System.Drawing.Point(36, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
@@ -132,7 +136,7 @@ namespace ChatClient
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(-3, 9);
+            this.label1.Location = new System.Drawing.Point(1, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 6;
@@ -140,9 +144,9 @@ namespace ChatClient
             // 
             // m_btnConnect
             // 
-            this.m_btnConnect.Location = new System.Drawing.Point(286, 7);
+            this.m_btnConnect.Location = new System.Drawing.Point(263, 35);
             this.m_btnConnect.Name = "m_btnConnect";
-            this.m_btnConnect.Size = new System.Drawing.Size(25, 23);
+            this.m_btnConnect.Size = new System.Drawing.Size(37, 23);
             this.m_btnConnect.TabIndex = 7;
             this.m_btnConnect.Text = "con";
             this.m_btnConnect.UseVisualStyleBackColor = true;
@@ -150,28 +154,96 @@ namespace ChatClient
             // 
             // m_tbServerAddress
             // 
-            this.m_tbServerAddress.Location = new System.Drawing.Point(180, 9);
+            this.m_tbServerAddress.Location = new System.Drawing.Point(157, 37);
             this.m_tbServerAddress.Name = "m_tbServerAddress";
             this.m_tbServerAddress.Size = new System.Drawing.Size(100, 20);
             this.m_tbServerAddress.TabIndex = 8;
             this.m_tbServerAddress.Text = "192.168.1.1";
             // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.BackColor = System.Drawing.Color.Black;
+            this.textBox2.ForeColor = System.Drawing.Color.Lime;
+            this.textBox2.Location = new System.Drawing.Point(0, 63);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(311, 305);
+            this.textBox2.TabIndex = 9;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connectToolStripMenuItem,
+            this.colorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(312, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // connectToolStripMenuItem
+            // 
+            this.connectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tigerClanToolStripMenuItem});
+            this.connectToolStripMenuItem.Name = "connectToolStripMenuItem";
+            this.connectToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.connectToolStripMenuItem.Text = "Connect";
+            // 
+            // tigerClanToolStripMenuItem
+            // 
+            this.tigerClanToolStripMenuItem.Name = "tigerClanToolStripMenuItem";
+            this.tigerClanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tigerClanToolStripMenuItem.Text = "TigerClan";
+            this.tigerClanToolStripMenuItem.Click += new System.EventHandler(this.tigerClanToolStripMenuItem_Click);
+            // 
+            // colorToolStripMenuItem
+            // 
+            this.colorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.textColorToolStripMenuItem,
+            this.backgroundColorToolStripMenuItem});
+            this.colorToolStripMenuItem.Name = "colorToolStripMenuItem";
+            this.colorToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.colorToolStripMenuItem.Text = "Color";
+            // 
+            // textColorToolStripMenuItem
+            // 
+            this.textColorToolStripMenuItem.Name = "textColorToolStripMenuItem";
+            this.textColorToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.textColorToolStripMenuItem.Text = "Text Color";
+            this.textColorToolStripMenuItem.Click += new System.EventHandler(this.textColorToolStripMenuItem_Click);
+            // 
+            // backgroundColorToolStripMenuItem
+            // 
+            this.backgroundColorToolStripMenuItem.Name = "backgroundColorToolStripMenuItem";
+            this.backgroundColorToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.backgroundColorToolStripMenuItem.Text = "Background Color";
+            this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(312, 343);
+            this.ClientSize = new System.Drawing.Size(312, 396);
             this.Controls.Add(this.m_tbServerAddress);
             this.Controls.Add(this.m_btnConnect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.m_btnSend);
             this.Controls.Add(this.m_tbMessage);
-            this.Controls.Add(this.m_lbRecievedData);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tiger Chat";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.FormMain_Closing);
             this.Load += new System.EventHandler(this.FormMain_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,9 +364,10 @@ namespace ChatClient
 
 		public void OnAddMessage( string sMessage )
 		{
-			m_lbRecievedData.Items.Add( sMessage );
-            m_lbRecievedData.SelectedIndex = m_lbRecievedData.Items.Count - 1;
-            m_lbRecievedData.SelectedIndex = -1;
+            textBox2.Text = textBox2.Text + sMessage + "\r\n";
+            textBox2.SelectionStart = textBox2.Text.Length;
+            textBox2.ScrollToCaret();
+
 		}
 		
 
@@ -365,6 +438,7 @@ namespace ChatClient
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            MenuStrip MainMenu = new MenuStrip();
             /*
             Cursor cursor = Cursor.Current;
             Cursor.Current = Cursors.WaitCursor;
@@ -399,6 +473,77 @@ namespace ChatClient
             }
             Cursor.Current = cursor;
              */
+        }
+
+        private void textColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = false;
+            // Allows the user to get help. (The default is false.)
+            MyDialog.ShowHelp = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = textBox2.ForeColor;
+
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+            {
+                textBox2.ForeColor = MyDialog.Color;
+            }
+        }
+
+        private void backgroundColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = false;
+            // Allows the user to get help. (The default is false.)
+            MyDialog.ShowHelp = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = textBox2.BackColor;
+
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+            {
+                textBox2.BackColor = MyDialog.Color;
+                textBox2.ForeColor = MyDialog.Color;
+            }
+        }
+
+        private void tigerClanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cursor cursor = Cursor.Current;
+            Cursor.Current = Cursors.WaitCursor;
+            try
+            {
+                // Close the socket if it is still open
+                if (m_sock != null && m_sock.Connected)
+                {
+                    m_sock.Shutdown(SocketShutdown.Both);
+                    System.Threading.Thread.Sleep(10);
+                    m_sock.Close();
+                }
+
+                // Create the socket object
+                m_sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+                // Define the Server address and port
+                IPEndPoint epServer = new IPEndPoint(IPAddress.Parse("24.229.41.95"), 399);
+
+                // Connect to the server blocking method and setup callback for recieved data
+                // m_sock.Connect( epServer );
+                // SetupRecieveCallback( m_sock );
+
+                // Connect to server non-Blocking method
+                m_sock.Blocking = false;
+                AsyncCallback onconnect = new AsyncCallback(OnConnect);
+                m_sock.BeginConnect(epServer, onconnect, m_sock);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, ex.Message, "Server Connect failed!");
+            }
+            Cursor.Current = cursor;
         }
 	}
 }
