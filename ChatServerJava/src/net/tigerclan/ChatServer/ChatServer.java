@@ -7,12 +7,11 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 import sun.misc.Queue;
 
-
 public class ChatServer {
+	static int id = 0;
 	/**
 	 * @param args
 	 */
-	static int id = 0;
 	public static void main(String[] args){
 		ServerSocket ss;
 		boolean running = true;
