@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class ClientThread extends Thread {
 	Socket s;
 	int id;
-	boolean running;
+	public boolean running;
 	String name;
 	OutputStream os;
 	boolean setupDone = false;
@@ -25,6 +25,7 @@ public class ClientThread extends Thread {
 	public void run(){
 		BufferedReader is;
 		try {
+			os.write(new String("Welcome!").getBytes());
 			os = s.getOutputStream();
 			is =  new BufferedReader(new InputStreamReader(s.getInputStream()));
 			setupDone = true;
@@ -53,7 +54,7 @@ public class ClientThread extends Thread {
 		try {
 			if (setupDone){
 				os.write(input.getBytes());
-				os.write('\n');
+				//os.write('\n'); //Nevermind
 			}
 		} catch (IOException e) {
 			System.out.println("FAILURE ON WRITE: THREAD "+id+"!!");
