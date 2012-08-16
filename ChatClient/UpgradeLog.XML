@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ChatClient">
+</Property><Property Name="Solution File" Value="C:\Users\Ryan\Desktop\cs\Chat\ChatClient\ChatClient.sln">
+</Property><Property Name="Date" Value="Sunday, August 12, 2012">
+</Property><Property Name="Time" Value="20:47 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ChatClient.sln" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\ChatClient.sln">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="ChatClient.csproj" Description="Project file successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\ChatClient.csproj">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="ChatClient.csproj.user" Description="Project user file successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\ChatClient.csproj.user">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="FormMain.cs" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\FormMain.cs">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="app.config" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="licenses.licx" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\licenses.licx">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="FormMain.resx" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatClient\Backup\FormMain.resx">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="ChatClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ChatClient" Source="ChatClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ChatClient.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ChatClient.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ChatClient" Source="ChatClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

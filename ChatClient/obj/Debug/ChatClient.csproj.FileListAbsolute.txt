@@ -1,0 +1,9 @@
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ChatClient.FormMain.resources
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ChatClient.pdb

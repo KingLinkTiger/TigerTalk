@@ -1,0 +1,5 @@
+C:\Users\Ryan\Desktop\cs\Chat\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\Ryan\Desktop\cs\Chat\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\Ryan\Desktop\cs\Chat\ChatServer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ryan\Desktop\cs\Chat\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\Ryan\Desktop\cs\Chat\ChatServer\obj\Debug\ChatServer.pdb

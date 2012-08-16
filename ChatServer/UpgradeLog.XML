@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ChatServer">
+</Property><Property Name="Solution File" Value="C:\Users\Ryan\Desktop\cs\Chat\ChatServer\ChatServer.sln">
+</Property><Property Name="Date" Value="Sunday, August 12, 2012">
+</Property><Property Name="Time" Value="20:43 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ChatServer.sln" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatServer\Backup\ChatServer.sln">
+</Event><Event ErrorLevel="0" Project="ChatServer" Source="ChatServer.csproj" Description="Project file successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatServer\Backup\ChatServer.csproj">
+</Event><Event ErrorLevel="0" Project="ChatServer" Source="ChatServer.csproj.user" Description="Project user file successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatServer\Backup\ChatServer.csproj.user">
+</Event><Event ErrorLevel="0" Project="ChatServer" Source="AppMain.cs" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatServer\Backup\AppMain.cs">
+</Event><Event ErrorLevel="0" Project="ChatServer" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Ryan\Desktop\cs\Chat\ChatServer\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ChatServer" Source="ChatServer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ChatServer" Source="ChatServer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ChatServer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ChatServer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ChatServer" Source="ChatServer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
