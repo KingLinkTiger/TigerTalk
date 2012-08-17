@@ -37,6 +37,7 @@ public class ClientThread extends Thread {
 			setupDone = true;
 			String commandline;
 			String[] commandarray;
+			chats.add(nickname + " has joined the server!");
 			console.write("User Connected! Thread id: " + id + ". " + dateFormat.format(date));
 			while (running){
 					if (!s.isConnected()){//Disconnect
@@ -44,20 +45,14 @@ public class ClientThread extends Thread {
 						break;
 					}
 					String line = is.readLine();
-					//String[] nick = line.split("[:]");
-					//nickname = nick[0];
-					//line = nick[1].trim();
-					
-					nickname = line.substring(0, line.indexOf(':'));
-					line = line.substring(line.indexOf(':') + 1);
-					
+
 					if (isSeverCommand(line)){
-						//commandline = line.substring(line.indexOf('~') + 1);
 						commandline = line.substring(1);
 						commandarray = commandline.split(" ");
 						ServerCommand(commandarray);
 						
-					}else{
+					}else{					
+					
 						if (isCommand(line)){
 					
 							commandline = line.substring(line.indexOf('/') + 1);
@@ -109,7 +104,10 @@ public class ClientThread extends Thread {
 	}
 	
 	private void ServerCommand(String[] c) {
-		nickname = c[0];		
+		console.write(nickname + " user changed nick to " + c[0]);
+		nickname = c[0];
+		write("nick changed to " + nickname);
+
 	}
 	
 	public void runCommand(String[] c){
