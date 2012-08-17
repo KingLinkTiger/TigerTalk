@@ -446,7 +446,7 @@ namespace ChatClient
 			try
 			{		
 				// Convert to byte array and send.
-                String message = textBox1.Text + ": " + m_tbMessage.Text + "\n";
+                String message = m_tbMessage.Text + "\n";
                 addMessage(m_tbMessage.Text);
                 Byte[] byteDateLine = Encoding.ASCII.GetBytes(message.ToCharArray());
 				m_sock.Send( byteDateLine, byteDateLine.Length, 0 );
