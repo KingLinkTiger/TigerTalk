@@ -15,10 +15,10 @@ public class ConsolePrinter {
 				fstream = new FileWriter("Console.log");
 				out = new BufferedWriter(fstream);
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				  System.out.println("Cant connect to log");
 				e.printStackTrace();
 			}
-
+			  
 	}
 	
 	public void write(String t){

@@ -19,7 +19,7 @@ public class ChatServer {
 		Vector<ClientThread> thread_pool = new Vector<ClientThread>();
 		ConcurrentLinkedQueue<String> chats = new ConcurrentLinkedQueue<String>();
 		DistributorThread ds = new DistributorThread(chats, thread_pool, console);
-		System.out.println("Started!");
+		console.write("Started!");
 		ds.start();
 		try {
 			ss = new ServerSocket(399);

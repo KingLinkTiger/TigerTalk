@@ -14,6 +14,7 @@ public class ClientThread extends Thread {
 	Socket s;
 	int id;
 	public boolean running;
+	//String name;
 	//String message;
 	OutputStream os;
 	public String nickname = "";
@@ -50,20 +51,27 @@ public class ClientThread extends Thread {
 					nickname = line.substring(0, line.indexOf(':'));
 					line = line.substring(line.indexOf(':') + 1);
 					
-					
-					if (isCommand(line)){
-						
-						commandline = line.substring(line.indexOf('/') + 1);
+					if (isSeverCommand(line)){
+						//commandline = line.substring(line.indexOf('~') + 1);
+						commandline = line.substring(1);
 						commandarray = commandline.split(" ");
-						runCommand(commandarray);
-					} else {
-						if (line != null){
-							chats.add(nickname+ ": " + line);
-						}else{// This means someone disconnected.
-							running = false;
-							break;
-						}
-						console.write(nickname+ ": " + line);
+						ServerCommand(commandarray);
+						
+					}else{
+						if (isCommand(line)){
+					
+							commandline = line.substring(line.indexOf('/') + 1);
+							commandarray = commandline.split(" ");
+							runCommand(commandarray);
+						} else {
+							if (line != null){
+								chats.add(nickname+ ": " + line);
+							}else{// This means someone disconnected.
+								running = false;
+								break;
+							}
+							console.write(nickname+ ": " + line);
+					}
 					}
 			}
 		} catch (IOException e) {
@@ -74,6 +82,7 @@ public class ClientThread extends Thread {
 		//System.out.println("Client closed: "+id);
 		write(nickname + " has left the server.");
 	}
+
 	public void write(String input){
 		try {
 			if (setupDone){
@@ -86,10 +95,21 @@ public class ClientThread extends Thread {
 	}
 	
 	public boolean isCommand(String line){
-		if(line.charAt(0) == '/'){
+		if(line.indexOf('/') == 0){
 			return true;
 		}
 		return false;
+	}
+	
+	public boolean isSeverCommand(String line){
+		if(line.indexOf('~') == 0){
+			return true;
+		}
+		return false;
+	}
+	
+	private void ServerCommand(String[] c) {
+		nickname = c[0];		
 	}
 	
 	public void runCommand(String[] c){
