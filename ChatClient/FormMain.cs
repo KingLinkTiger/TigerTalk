@@ -320,8 +320,24 @@ namespace ChatClient
 			{
 				MessageBox.Show( this, ex.Message, "Unusual error during Connect!" );
 			}
+
+            sendNick();
 		}
 
+        public void sendNick()
+        {
+            String message = "~" + textBox1.Text + "\n";
+            Byte[] byteDateLine = Encoding.ASCII.GetBytes(message.ToCharArray());
+            m_sock.Send(byteDateLine, byteDateLine.Length, 0);
+        }
+
+
+        public ArrayList messages = new ArrayList();
+
+        public void addMessage(String m)
+        {
+            messages.Add(m);
+        }
 		/// <summary>
 		/// Get the new data and send it out to all other connections. 
 		/// Note: If not data was recieved the connection has probably 
@@ -368,7 +384,6 @@ namespace ChatClient
             textBox2.Text = textBox2.Text + sMessage + "\r\n";
             textBox2.SelectionStart = textBox2.Text.Length;
             textBox2.ScrollToCaret();
-
 		}
 		
 
@@ -403,11 +418,16 @@ namespace ChatClient
 
         private void m_tbMessage_keyDown(object sender, KeyEventArgs e)
         {
-            
             if (e.KeyValue == 13) //13 = enter
             {
                 m_btnSend.PerformClick();
                 e.SuppressKeyPress = true;
+            }
+            else if (e.KeyValue == 38)
+            {
+                int index = (messages.Count - 1);
+                string text = (string)messages[index];
+                m_tbMessage.Text = text;
             }
         }
 		/// <summary>
@@ -427,6 +447,7 @@ namespace ChatClient
 			{		
 				// Convert to byte array and send.
                 String message = textBox1.Text + ": " + m_tbMessage.Text + "\n";
+                addMessage(m_tbMessage.Text);
                 Byte[] byteDateLine = Encoding.ASCII.GetBytes(message.ToCharArray());
 				m_sock.Send( byteDateLine, byteDateLine.Length, 0 );
                 m_tbMessage.Clear();
