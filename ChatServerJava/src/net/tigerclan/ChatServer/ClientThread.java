@@ -1,9 +1,6 @@
 package net.tigerclan.ChatServer;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -13,19 +10,20 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class ClientThread extends Thread {
 	public DateFormat dateFormat = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
 	public Date date = new Date();
+	public ConsolePrinter console;
 	Socket s;
 	int id;
 	public boolean running;
-	//String name;
 	//String message;
 	OutputStream os;
 	public String nickname = "";
 	boolean setupDone = false;
 	ConcurrentLinkedQueue<String> chats;
-	public ClientThread(Socket s,int id,ConcurrentLinkedQueue<String> chats) {
+	public ClientThread(Socket s,int id,ConcurrentLinkedQueue<String> chats, ConsolePrinter console) {
 		this.s = s;
 		running = true;
 		this.chats = chats;
+		this.console = console;
 	}
 	
 	public void run(){
@@ -38,20 +36,19 @@ public class ClientThread extends Thread {
 			setupDone = true;
 			String commandline;
 			String[] commandarray;
-			System.out.println("User Connected! Thread id: " + id + ". " + dateFormat.format(date));
+			console.write("User Connected! Thread id: " + id + ". " + dateFormat.format(date));
 			while (running){
 					if (!s.isConnected()){//Disconnect
 						running = false;
 						break;
 					}
 					String line = is.readLine();
-					String[] nick = line.split("[:]");
-					nickname = nick[0];
-					line = nick[1].trim();
-					//name = line.substring(0, line.indexOf(':'));
-					//line = line.substring(line.indexOf(':') + 1);
-
-					//message = line.substring(line.indexOf(':') + 1);
+					//String[] nick = line.split("[:]");
+					//nickname = nick[0];
+					//line = nick[1].trim();
+					
+					nickname = line.substring(0, line.indexOf(':'));
+					line = line.substring(line.indexOf(':') + 1);
 					
 					
 					if (isCommand(line)){
@@ -66,12 +63,12 @@ public class ClientThread extends Thread {
 							running = false;
 							break;
 						}
-					System.out.println(nickname+ ": " + line);
+						console.write(nickname+ ": " + line);
 					}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-			System.out.println("FAILURE ON READ: THREAD "+id+"!!");
+			console.write("FAILURE ON READ: THREAD "+id+"!!");
 			running = false;
 		}
 		//System.out.println("Client closed: "+id);
@@ -84,12 +81,12 @@ public class ClientThread extends Thread {
 				//os.write('\n'); //Nevermind
 			}
 		} catch (IOException e) {
-			System.out.println("FAILURE ON WRITE: THREAD "+ id +"!!");
+			console.write("FAILURE ON WRITE: THREAD "+ id +"!!");
 		}
 	}
 	
 	public boolean isCommand(String line){
-		if(line.indexOf('/') == 0){
+		if(line.charAt(0) == '/'){
 			return true;
 		}
 		return false;
@@ -97,7 +94,7 @@ public class ClientThread extends Thread {
 	
 	public void runCommand(String[] c){
 		String command = c[0];
-		System.out.println(nickname + " tried command " + command);
+		console.write(nickname + " tried command " + command);
 		if(command.equals("server") || command.equals("version"))
 		{
 			write("This server is running Tiger Chat v1.0");
@@ -106,8 +103,11 @@ public class ClientThread extends Thread {
 		
 		}else if(command.equals("nick")){
 			write("You can't change your nick yet");
+		}else if (command.equals("help")){
+			write("Commands are: version, me, nick, and help.");
 		}else{
 			write("invalid command " + command);
 		}
 	}
+
 }
