@@ -38,28 +38,28 @@ public class ClientThread extends Thread {
 			String commandline;
 			String[] commandarray;
 			console.write("User Connected! Thread id: " + id + ". " + dateFormat.format(date));
+			
+			String line = is.readLine();
+			if (isSeverCommand(line)){
+				commandline = line.substring(1);
+				commandarray = commandline.split(" ");
+				ServerCommand(commandarray);
+			}
+			chats.add(nickname + " has joined the server!\r\n");//<<<<<Righthere
+			DistributorThread.sendUsers(this);
 			while (running){
 					if (!s.isConnected()){//Disconnect
 						running = false;
 						break;
 					}
-					String line = is.readLine();
-					//String[] nick = line.split("[:]");
-					//nickname = nick[0];
-					//line = nick[1].trim();
-					
-					nickname = line.substring(0, line.indexOf(':'));
-					line = line.substring(line.indexOf(':') + 1);
+					line = is.readLine();
 					
 					if (isSeverCommand(line)){
-						//commandline = line.substring(line.indexOf('~') + 1);
 						commandline = line.substring(1);
 						commandarray = commandline.split(" ");
 						ServerCommand(commandarray);
-						
-					}else{
+					}else{					
 						if (isCommand(line)){
-					
 							commandline = line.substring(line.indexOf('/') + 1);
 							commandarray = commandline.split(" ");
 							runCommand(commandarray);
@@ -80,7 +80,7 @@ public class ClientThread extends Thread {
 			running = false;
 		}
 		//System.out.println("Client closed: "+id);
-		write(nickname + " has left the server.");
+		chats.add(nickname + " has left the server!");
 	}
 
 	public void write(String input){
@@ -109,7 +109,10 @@ public class ClientThread extends Thread {
 	}
 	
 	private void ServerCommand(String[] c) {
-		nickname = c[0];		
+		console.write(nickname + " user changed nick to " + c[0]);
+		nickname = c[0];
+		write("nick changed to " + nickname +"\r\n");
+
 	}
 	
 	public void runCommand(String[] c){
@@ -119,14 +122,26 @@ public class ClientThread extends Thread {
 		{
 			write("This server is running Tiger Chat v1.0");
 		}else if(command.equals("me")){
-			write("you tried command me!");
-		
-		}else if(command.equals("nick")){
-			write("You can't change your nick yet");
+			//write("you tried command me!");
+			String message = "";
+			int loop = 0;
+			for(String arg : c){
+				if (loop == 0) {
+					
+				} else {
+					message = message + arg + " ";
+				}
+				loop++;
+			}
+			chats.add("**" + nickname + " " + message);
+		}else if(command.equals("nick")){			
+			console.write(nickname + " user changed nick to " + c[1]);
+			nickname = c[1];
+			write("nick changed to " + nickname + "\r\n");
 		}else if (command.equals("help")){
 			write("Commands are: version, me, nick, and help.");
 		}else{
-			write("invalid command " + command);
+			write("/" + command + " is not a valid command.");
 		}
 	}
 

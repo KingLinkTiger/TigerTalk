@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class DistributorThread extends Thread {
 	ConcurrentLinkedQueue<String> chats;
-	Vector<ClientThread> thread_pool;
+	static Vector<ClientThread> thread_pool;
 	public ConsolePrinter console;
 	boolean running = true;
 	public DistributorThread(ConcurrentLinkedQueue<String> chats,Vector<ClientThread> thread_pool, ConsolePrinter console){
@@ -31,4 +31,18 @@ public class DistributorThread extends Thread {
 			
 		}
 	}
+	public static void sendUsers(ClientThread ct) {
+		String users = "";
+		boolean first = true;
+		for (ClientThread th : thread_pool){
+			if (!first) {
+				users = users + ",";
+			}
+			users = users + th.nickname;
+			first = false;
+		}
+
+		ct.write("~" + users + "\r\n");
+	}
+
 }

@@ -7,6 +7,7 @@ using System.Data;
 using System.Net;									// Endpoint
 using System.Net.Sockets;							// Socket namespace
 using System.Text;									// Text encoders
+using System.Text.RegularExpressions;
 
 // Declare the delegate prototype to send data back to the form
 delegate void AddMessage( string sNewMessage );
@@ -46,6 +47,8 @@ namespace ChatClient
         private ToolStripMenuItem colorToolStripMenuItem;
         private ToolStripMenuItem textColorToolStripMenuItem;
         private ToolStripMenuItem backgroundColorToolStripMenuItem;
+        private ListBox listBox1;
+        private SplitContainer splitContainer1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -103,23 +106,29 @@ namespace ChatClient
             this.colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_tbMessage
             // 
             this.m_tbMessage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_tbMessage.Location = new System.Drawing.Point(0, 374);
+            this.m_tbMessage.Location = new System.Drawing.Point(0, 557);
             this.m_tbMessage.Name = "m_tbMessage";
-            this.m_tbMessage.Size = new System.Drawing.Size(238, 20);
+            this.m_tbMessage.Size = new System.Drawing.Size(765, 20);
             this.m_tbMessage.TabIndex = 3;
             this.m_tbMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.m_tbMessage_keyDown);
             // 
             // m_btnSend
             // 
             this.m_btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_btnSend.Location = new System.Drawing.Point(236, 372);
+            this.m_btnSend.Location = new System.Drawing.Point(763, 555);
             this.m_btnSend.Name = "m_btnSend";
             this.m_btnSend.Size = new System.Drawing.Size(75, 23);
             this.m_btnSend.TabIndex = 4;
@@ -132,6 +141,7 @@ namespace ChatClient
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // label1
             // 
@@ -167,12 +177,12 @@ namespace ChatClient
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.BackColor = System.Drawing.Color.Black;
             this.textBox2.ForeColor = System.Drawing.Color.Lime;
-            this.textBox2.Location = new System.Drawing.Point(0, 63);
+            this.textBox2.Location = new System.Drawing.Point(0, 1);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(311, 305);
+            this.textBox2.Size = new System.Drawing.Size(632, 484);
             this.textBox2.TabIndex = 9;
             // 
             // menuStrip1
@@ -183,7 +193,7 @@ namespace ChatClient
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(312, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(839, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -225,17 +235,49 @@ namespace ChatClient
             this.backgroundColorToolStripMenuItem.Text = "Background Color";
             this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBox1.BackColor = System.Drawing.Color.Black;
+            this.listBox1.ForeColor = System.Drawing.Color.Lime;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(-1, 0);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(197, 485);
+            this.listBox1.TabIndex = 12;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.splitContainer1.Location = new System.Drawing.Point(0, 63);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.textBox2);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.listBox1);
+            this.splitContainer1.Size = new System.Drawing.Size(838, 488);
+            this.splitContainer1.SplitterDistance = 635;
+            this.splitContainer1.TabIndex = 13;
+            // 
             // FormMain
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(312, 396);
+            this.ClientSize = new System.Drawing.Size(839, 579);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.m_tbServerAddress);
             this.Controls.Add(this.m_btnConnect);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.m_btnSend);
             this.Controls.Add(this.m_tbMessage);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
@@ -245,6 +287,11 @@ namespace ChatClient
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,9 +428,20 @@ namespace ChatClient
 
 		public void OnAddMessage( string sMessage )
 		{
-            textBox2.Text = textBox2.Text + sMessage + "\r\n";
-            textBox2.SelectionStart = textBox2.Text.Length;
-            textBox2.ScrollToCaret();
+            if (sMessage.StartsWith("~"))
+            {
+                listBox1.Items.Clear();
+                string[] nicknames = Regex.Split(sMessage, "[,]");
+                foreach(String nick in nicknames){
+                    listBox1.Items.Add(nick.TrimStart('~'));
+                }
+            }
+            else
+            {
+                textBox2.Text = textBox2.Text + sMessage + "\r\n";
+                textBox2.SelectionStart = textBox2.Text.Length;
+                textBox2.ScrollToCaret();
+            }
 		}
 		
 
@@ -511,6 +569,7 @@ namespace ChatClient
             if (MyDialog.ShowDialog() == DialogResult.OK)
             {
                 textBox2.ForeColor = MyDialog.Color;
+                listBox1.ForeColor = MyDialog.Color;
             }
         }
 
@@ -528,7 +587,7 @@ namespace ChatClient
             if (MyDialog.ShowDialog() == DialogResult.OK)
             {
                 textBox2.BackColor = MyDialog.Color;
-                textBox2.ForeColor = MyDialog.Color;
+                listBox1.BackColor = MyDialog.Color;
             }
         }
 
@@ -566,6 +625,15 @@ namespace ChatClient
                 MessageBox.Show(this, ex.Message, "Server Connect failed!");
             }
             Cursor.Current = cursor;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13) //13 = enter
+            {
+                sendNick();
+                e.SuppressKeyPress = true;
+            }
         }
 	}
 }
