@@ -5,20 +5,20 @@ import java.net.*;
 import java.util.Vector;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-import sun.misc.Queue;
-
 
 public class ChatServer {
+	static int id = 0;
+	public static ConsolePrinter console = new ConsolePrinter();
 	/**
 	 * @param args
 	 */
-	static int id = 0;
 	public static void main(String[] args){
 		ServerSocket ss;
+
 		boolean running = true;
 		Vector<ClientThread> thread_pool = new Vector<ClientThread>();
 		ConcurrentLinkedQueue<String> chats = new ConcurrentLinkedQueue<String>();
-		DistributorThread ds = new DistributorThread(chats, thread_pool);
+		DistributorThread ds = new DistributorThread(chats, thread_pool, console);
 		System.out.println("Started!");
 		ds.start();
 		try {
@@ -38,7 +38,7 @@ public class ChatServer {
 				e.printStackTrace();
 				return;
 			}
-			thread_pool.add(new ClientThread(s, id++, chats));
+			thread_pool.add(new ClientThread(s, id++, chats, console));
 			thread_pool.get(thread_pool.size()-1).start();
 		}
 		

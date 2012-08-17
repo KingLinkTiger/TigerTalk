@@ -6,10 +6,12 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class DistributorThread extends Thread {
 	ConcurrentLinkedQueue<String> chats;
 	Vector<ClientThread> thread_pool;
+	public ConsolePrinter console;
 	boolean running = true;
-	public DistributorThread(ConcurrentLinkedQueue<String> chats,Vector<ClientThread> thread_pool){
+	public DistributorThread(ConcurrentLinkedQueue<String> chats,Vector<ClientThread> thread_pool, ConsolePrinter console){
 		this.chats = chats;
 		this.thread_pool = thread_pool;
+		this.console = console;
 	}
 	public void run(){
 		while (running){
