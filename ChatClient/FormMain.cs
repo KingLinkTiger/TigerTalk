@@ -725,8 +725,31 @@ namespace ChatClient
                 
                 if (e.KeyValue == 13) //13 = enter
                 {
-                    m_btnSend.PerformClick();
-                    e.SuppressKeyPress = true;
+                    if (m_sock == null || !m_sock.Connected)
+                    {
+                        
+                        if (m_tbMessage.Text.StartsWith("/"))
+                        {
+                            string[] args = Regex.Split(m_tbMessage.Text, @"\s+");
+                            foreach (String c in args)
+                            {
+                                String command = c;
+                                command = command.TrimStart('/');
+                                if (command.Equals("connect"))
+                                {
+                                    m_btnConnect.PerformClick();
+                                    m_tbMessage.Text = "";
+                                }
+                            }
+                        }
+                        return;
+                    }
+                    else
+                    {
+                        m_btnSend.PerformClick();
+                        e.SuppressKeyPress = true;
+                        index = messages.Count;
+                    }
                 }
                 else if (e.KeyValue == 38)
                 {

@@ -1,0 +1,857 @@
+RoyGoldman has disconnected.
+Started!
+Started!
+ user changed nick to Roy
+User Connected! Thread id: 0. 17/08/12 18:19:41
+Roy has disconnected.
+Started!
+ user changed nick to Roy
+User Connected! Thread id: 0. 17/08/12 18:36:01
+Roy has disconnected.
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 18:37:03
+ user changed nick to Roy
+User Connected! Thread id: 1. 17/08/12 18:37:22
+Roy has disconnected.
+RoyGoldman has disconnected.
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 18:41:29
+RoyGoldman has disconnected.
+Started!
+ user changed nick to royGoldman
+User Connected! Thread id: 0. 17/08/12 18:52:46
+royGoldman has disconnected.
+ user changed nick to KingLinkTiger
+User Connected! Thread id: 1. 17/08/12 18:53:35
+KingLinkTiger: I connected
+KingLinkTiger: Nogger
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 18:54:24
+ user changed nick to KLT
+User Connected! Thread id: 1. 17/08/12 18:54:38
+KLT: Watch
+KLT: http://www.youtube.com/watch?v=WSeNSzJ2-Jw&noredirect=1
+KLT has disconnected.
+FAILURE ON READ: THREAD 2!!
+ has disconnected.
+FAILURE ON WRITE: THREAD 2!!
+ user changed nick to KLT
+User Connected! Thread id: 3. 17/08/12 18:55:29
+KLT has disconnected.
+RoyGoldman has disconnected.
+ user changed nick to Roy
+User Connected! Thread id: 4. 17/08/12 18:57:08
+User Connected! Thread id: 5. 17/08/12 18:59:55
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+: JOIN #help
+: JOIN #help
+: JOIN #help
+: JOIN #help
+: NICK :Help
+: NICK :Tiger
+: PING :TIMEOUTCHECK
+Roy: hello!
+Roy: ahsdfj
+Roy: asdfhasdf
+Roy: dfhasdf
+Roy: dfh
+ has disconnected.
+User Connected! Thread id: 6. 17/08/12 19:03:01
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+: LUSERS
+: NICK :Tiger
+: NICK :Tiger
+Started!
+User Connected! Thread id: 0. 17/08/12 19:04:47
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+ user changed nick to Roy
+User Connected! Thread id: 1. 17/08/12 19:04:51
+Roy: hello!
+Roy: asdf
+Roy: asdf
+Roy: asdf
+Roy: adsf
+Roy: ask;dlf
+Roy: asdfklasd
+Roy: asdfjasd
+Roy: asdfjasf
+Roy: asdf
+Roy: asdf
+Roy: asdfhuwr
+Roy: dncve
+Roy: 
+Roy: 
+Roy: 
+Roy: 
+Roy: 
+Roy: asdfi
+Roy: eie
+Roy: e
+Roy: e
+Roy: e
+Roy: eah
+Roy: hello
+Roy: tesst
+Roy: asdf
+Roy: asdf
+Roy: asdf
+Roy: sdf
+Roy: asdf
+: PING :TIMEOUTCHECK
+: QUIT :
+ has disconnected.
+User Connected! Thread id: 2. 17/08/12 19:07:12
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+: NICK :Tiger
+: PING :TIMEOUTCHECK
+: JOIN #chan
+: JOIN #chan
+ has disconnected.
+User Connected! Thread id: 3. 17/08/12 19:10:20
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+: QUIT :
+ has disconnected.
+User Connected! Thread id: 4. 17/08/12 19:10:21
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+User Connected! Thread id: 5. 17/08/12 19:12:16
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+: HELLO WORLD
+: HELLO
+FAILURE ON READ: THREAD 4!!
+ has disconnected.
+FAILURE ON WRITE: THREAD 4!!
+: YOU SHOULD SEE THIS
+Roy has disconnected.
+ user changed nick to RoyGoldman
+User Connected! Thread id: 6. 17/08/12 19:13:21
+: TEST
+: TEST
+: TEST
+: THIS
+: THAT
+RoyGoldman: Hello
+: YOU
+Started!
+User Connected! Thread id: 0. 17/08/12 19:14:04
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+ user changed nick to RoyGoldman
+User Connected! Thread id: 1. 17/08/12 19:14:06
+: TEST
+RoyGoldman: hello!
+: THIS
+: IS CODE
+: ASD
+: ASDASDAS
+: NICK :this
+: WHAT about this stuff
+: PING :TIMEOUTCHECK
+ has disconnected.
+User Connected! Thread id: 2. 17/08/12 19:17:12
+: NICK KingLinkTiger
+: USER KingLinkTiger 0 * :KingLinkTiger
+: QUIT :
+ has disconnected.
+RoyGoldman has disconnected.
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 19:43:56
+Started!
+ user changed nick to KLT
+User Connected! Thread id: 0. 17/08/12 19:49:06
+ user changed nick to RoyGoldman
+User Connected! Thread id: 1. 17/08/12 19:49:07
+KLT: ~KLT
+KLT: Weird
+KLT: double
+KLT: nigger
+RoyGoldman: hey!
+KLT has disconnected.
+ user changed nick to KLT
+User Connected! Thread id: 3. 17/08/12 19:49:23
+KLT: TEst
+KLT has disconnected.
+FAILURE ON READ: THREAD 2!!
+ has disconnected.
+FAILURE ON WRITE: THREAD 2!!
+ user changed nick to KLT
+User Connected! Thread id: 4. 17/08/12 19:49:54
+KLT: Nogger
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 19:50:11
+ user changed nick to KLT
+User Connected! Thread id: 1. 17/08/12 19:50:20
+KLT: Hello
+KLT tried command msg
+RoyGoldman: wdfg
+RoyGoldman: sdfg
+FAILURE ON WRITE: THREAD 1!!
+RoyGoldman tried command msg
+ user changed nick to KLT
+User Connected! Thread id: 2. 17/08/12 19:51:16
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+KLT: Hello?
+FAILURE ON WRITE: THREAD 1!!
+KLT tried command msg
+KLT tried command msg
+RoyGoldman tried command msg
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 19:51:58
+ user changed nick to kl
+User Connected! Thread id: 1. 17/08/12 19:52:03
+kl: Hi
+kl: Does this shit work?
+RoyGoldman tried command msg
+kl: >kl
+kl: Crashing dem server
+kl: Nope
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: No message
+kl: HAXING THE SERVER
+kl tried command msg
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 19:54:45
+RoyGoldman tried command msg
+RoyGoldman: hello!
+RoyGoldman tried command msg
+Whore
+ user changed nick to KLT
+User Connected! Thread id: 1. 17/08/12 19:56:01
+KLT: What
+KLT tried command msg
+Whore
+KLT tried command msg
+Whore
+KLT tried command msg
+KLT tried command msg
+KLT: 
+KLT: 
+KLT: 
+KLT: 
+KLT: Once
+KLT: and only once
+KLT: Fgt
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 19:57:48
+RoyGoldman: hello
+RoyGoldman tried command msg
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 19:59:05
+RoyGoldman tried command msg
+RoyGoldman tried command msg
+ user changed nick to k
+User Connected! Thread id: 1. 17/08/12 20:06:06
+RoyGoldman tried command nick
+RoyGoldman user changed nick to Rich
+Rich: hello!
+Rich: this is me typing
+k: ~kjg
+Rich: http://google.com
+Rich tried command msg
+To few arguments. NIGGER
+Rich tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k: Hellio
+k tried command msg
+To few arguments. NIGGER
+k tried command msg
+To few arguments. NIGGER
+k tried command msg
+To few arguments. NIGGER
+k tried command msg
+To few arguments. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+k tried command msg
+Invaid Nick. NIGGER
+Invaid Nick. NIGGER
+Rich tried command msg
+Invaid Nick. NIGGER
+k tried command nick
+k user changed nick to Nigger
+Nigger: Nigger
+Nigger: Nigger
+Nigger: Nigger
+Nigger: Nigger
+Nigger: Nigger
+Nigger: Nigger
+Nigger: Nigger
+Nigger: Nigger
+Rich: hello!
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 20:41:26
+20:41:26RoyGoldman: hey!
+ user changed nick to l
+User Connected! Thread id: 1. 17/08/12 20:41:58
+20:41:58l: THis is bad
+20:41:58l: Black People
+20:41:58l: Are Black
+20:41:26RoyGoldman: very black people
+20:41:58l: >It just asked for my registration
+20:41:58l: >Ccleaner
+20:41:58l: "Intelegent"
+l tried command msg
+The nick you entered is invalid
+l has disconnected.
+FAILURE ON READ: THREAD 2!!
+ has disconnected.
+ user changed nick to KLT
+User Connected! Thread id: 3. 17/08/12 20:48:37
+ user changed nick to Username
+User Connected! Thread id: 4. 17/08/12 20:48:58
+20:48:58Username: Test
+20:41:26RoyGoldman: hi i think something crashed
+20:48:37KLT: No
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 20:49:43
+ user changed nick to KLT
+User Connected! Thread id: 1. 17/08/12 20:50:17
+ user changed nick to Username
+User Connected! Thread id: 2. 17/08/12 20:52:07
+20:49:43 RoyGoldman: hi!
+20:50:17 KLT: Hi
+20:50:17 KLT: Wow
+20:52:07 Username: Hello
+20:50:17 KLT: Spaces
+KLT tried command nick
+KLT user changed nick to KingLinkTiger
+20:52:07 Username: Spaces?
+20:50:17 KingLinkTiger: Timestamp
+20:52:07 Username: Kewl
+20:49:43 RoyGoldman: and /nick!
+20:50:17 KingLinkTiger: It used to not have a space between it and the nick
+20:50:17 KingLinkTiger: ~Nick
+20:50:17 KingLinkTiger: No work anymore
+KingLinkTiger tried command msg
+To few arguments.
+KingLinkTiger tried command msg
+To few arguments.
+KingLinkTiger tried command msg
+20:49:43 RoyGoldman: so you like?
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: Pretty good, Richie, did you get the github program?
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: no i am at ryan's house
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: it failed again
+20:52:07 Username: Okay
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: and we have a failure on write
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: thread 1
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: Who is thread 1?
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: That's what we need to code up
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: should be ryan
+FAILURE ON WRITE: THREAD 1!!
+ user changed nick to KLT
+User Connected! Thread id: 3. 17/08/12 20:55:28
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:55:28 KLT: Now I am
+FAILURE ON WRITE: THREAD 1!!
+20:55:28 KLT: Hi
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: hi
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: asdf
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: fdas
+20:49:43 RoyGoldman: asdf
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: asdf
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: aasdf
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: enough?
+20:55:28 KLT: Annoying client GO
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: Richie, look at saros
+20:55:28 KLT: Max
+FAILURE ON WRITE: THREAD 1!!
+20:55:28 KLT: I made the client beep on every message
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: yes?
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: yupp...
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: invite failed
+20:52:07 Username: Well, fix that before you commit
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: No, you have to pick a project or somethign
+FAILURE ON WRITE: THREAD 1!!
+20:55:28 KLT: Anoy-o-Client
+FAILURE ON WRITE: THREAD 1!!
+20:49:43 RoyGoldman: what?
+FAILURE ON WRITE: THREAD 1!!
+KLT has disconnected.
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+20:52:07 Username: Nevermind
+20:52:07 Username: asdasd
+20:52:07 Username: KLT has broken the server!
+20:49:43 RoyGoldman: okay i have no session in saros right now
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:01:35
+ user changed nick to Username
+User Connected! Thread id: 1. 17/08/12 21:03:25
+21:03:25 Username: yay
+21:03:25 Username: Test
+21:01:35 RoyGoldman: oh and the log works!
+21:03:25 Username: Kewl
+21:01:35 RoyGoldman: out times are off...
+21:01:35 RoyGoldman: our*
+21:03:25 Username: yes
+21:03:25 Username: heh
+21:01:35 RoyGoldman: i will deal with that later...
+21:03:25 Username: Hmm, the code you took out that was mine is actually somewhere else
+21:03:25 Username: Line 52 encapsulated what it was
+21:01:35 RoyGoldman: in?
+21:03:25 Username: ClientThread
+21:03:25 Username: And eclipse figured it out for me, that was cool
+21:01:35 RoyGoldman: yea
+21:03:25 Username: Now what?
+21:03:25 Username: Why is it crashing still on disconnect?
+21:01:35 RoyGoldman: i dont know i dont think it removes the client from the list for some reason
+21:03:25 Username: Shouldn't it?
+21:01:35 RoyGoldman: it should but it does not
+21:01:35 RoyGoldman: and also the users list is bipolar somethimes it does not update
+21:03:25 Username: Yeah, like on my client
+21:01:35 RoyGoldman: yea it should reload everyones on every connect and disconnect
+21:01:35 RoyGoldman: i might make a command for it. i will o that right now
+21:01:35 RoyGoldman: none it will be in the next restart
+21:01:35 RoyGoldman: done*
+21:03:25 Username: There's some way to edit java code and inject it into a running VM
+21:03:25 Username: Notch uses it all the time
+21:01:35 RoyGoldman: i dont know what it is
+21:03:25 Username: Speeds up development a lot
+21:01:35 RoyGoldman: it would
+21:01:35 RoyGoldman: i am going to restart the server
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:12:18
+ user changed nick to KLT
+User Connected! Thread id: 1. 17/08/12 21:12:19
+21:12:19 KLT: Test
+21:12:19 KLT: Test
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: Nigger
+21:12:19 KLT: no
+21:12:19 KLT: no
+ user changed nick to Username
+User Connected! Thread id: 2. 17/08/12 21:12:37
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:37 Username: Test
+21:12:37 Username: Test
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+21:12:19 KLT: no
+RoyGoldman tried command users
+21:12:37 Username: The time value isn't getting refreshed
+21:12:18 RoyGoldman: .... :(
+21:12:37 Username: Kinda funny
+21:12:37 Username: everything was sent at once
+21:12:18 RoyGoldman: it should happen noe
+21:12:18 RoyGoldman: now*
+21:12:18 RoyGoldman: max how do we use it?
+21:12:37 Username: So you have to hit the debug option in eclipse when you run the server, and then all should be good
+21:12:37 Username: And I bet I can edit the code via Saros and it will work
+21:12:18 RoyGoldman: let me restart then
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:17:09
+ user changed nick to KLT
+User Connected! Thread id: 1. 17/08/12 21:17:11
+21:17:13 KLT: Hia
+21:17:19 RoyGoldman: hey!
+ user changed nick to Username
+User Connected! Thread id: 2. 17/08/12 21:17:21
+21:17:25 Username: Test
+21:17:29 KLT: Test
+KLT tried command msg
+Username tried command users
+21:17:40 RoyGoldman: max what does you user box say?
+21:17:50 Username: Nothing, but I just did ./users and it worked
+21:17:58 RoyGoldman: okay i saw that
+21:18:25 RoyGoldman: yupp
+Username tried command test
+21:18:34 Username: That's awesome
+21:18:41 Username: Do ./test, which I just addwed
+21:18:44 Username: added*
+21:18:45 RoyGoldman: nice
+RoyGoldman tried command test
+Username tried command me
+21:19:23 RoyGoldman: like?
+21:19:26 Username: yes
+21:19:37 Username: ./me always needs to be an option
+21:19:55 RoyGoldman: ?
+FAILURE ON WRITE: THREAD 1!!
+21:20:07 Username: Every chat thing needs to be able to do ./me
+RoyGoldman tried command users
+FAILURE ON WRITE: THREAD 1!!
+ user changed nick to KLT
+User Connected! Thread id: 3. 17/08/12 21:20:23
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:20:27 KLT: I'm breaking stuff
+FAILURE ON WRITE: THREAD 1!!
+KLT tried command users
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:20:31 KLT: YAY
+21:20:31 RoyGoldman: failure on thread 1
+FAILURE ON WRITE: THREAD 1!!
+21:20:34 RoyGoldman:  :(
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:20:36 RoyGoldman: i hate you
+21:20:37 KLT: I'm using 2 threads
+FAILURE ON WRITE: THREAD 1!!
+21:20:39 KLT: I think
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:20:45 Username: The server is still running though
+21:20:45 KLT: Sound activate
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:20:49 KLT: yay
+FAILURE ON WRITE: THREAD 1!!
+21:20:49 KLT: beeps
+FAILURE ON WRITE: THREAD 1!!
+21:20:58 Username: Did thread 1 die successfully?
+21:21:01 KLT: No
+FAILURE ON WRITE: THREAD 1!!
+21:21:02 RoyGoldman: no
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:21:04 KLT: I see 2 KLTs
+21:21:07 KLT: in my users box
+FAILURE ON WRITE: THREAD 1!!
+KLT tried command users
+FAILURE ON WRITE: THREAD 1!!
+21:21:09 Username: Well, it didn't take down the server
+FAILURE ON WRITE: THREAD 1!!
+Username tried command users
+FAILURE ON WRITE: THREAD 1!!
+21:21:14 KLT: Lucally
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:21:20 RoyGoldman: no but it give the error
+21:21:27 RoyGoldman: FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+FAILURE ON WRITE: THREAD 1!!
+21:22:00 Username: That might fix it (line 99)
+21:22:10 RoyGoldman: it did it again
+21:22:23 KLT: .troll
+21:22:25 KLT: Why
+21:22:27 KLT: I no talk
+21:22:42 RoyGoldman: wait it did
+21:22:46 Username: Richie, is it still saying Write Failure on Thread 1?
+KLT has disconnected.
+21:22:50 RoyGoldman: the eror is gone nice
+21:22:51 Username: Test
+21:23:00 RoyGoldman: i cant see you
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:23:47
+RoyGoldman tried command users
+ user changed nick to Username
+User Connected! Thread id: 1. 17/08/12 21:24:14
+Username tried command users
+21:24:57 RoyGoldman: when on connect?
+21:25:01 RoyGoldman: i will fix that
+21:25:04 RoyGoldman: it should not
+21:25:06 Username: Yeah
+Username tried command users
+21:25:16 RoyGoldman: the client is not recieving it
+21:25:19 RoyGoldman: right
+21:25:22 Username: Hmm, it doesn't show it on later uses of ./users
+21:25:46 RoyGoldman: only the first time that happens when the server sends it on connect
+21:25:54 Username: Why is that time special?
+21:26:39 RoyGoldman: no but it just does not send it right
+21:26:48 RoyGoldman: for some unknown reason
+21:27:00 Username: It sends it identically
+21:27:18 RoyGoldman: i know
+21:27:41 RoyGoldman: il try reconnection
+RoyGoldman has disconnected.
+ user changed nick to RoyGoldman
+User Connected! Thread id: 2. 17/08/12 21:28:01
+21:28:07 RoyGoldman: nope
+RoyGoldman tried command users
+21:28:18 Username: What if DistributorThread and ClientThread are writing to a socket at the same time?
+21:28:29 RoyGoldman: that might be it
+21:28:32 Username: Also, there was no "RoyGoldman has left the server" message
+21:28:41 RoyGoldman: like the spaces when you connect
+21:28:42 Username: Let me look in wireshark
+Username has disconnected.
+21:29:13 RoyGoldman: there should be...
+21:29:21 RoyGoldman: it is in the code
+ user changed nick to Username
+User Connected! Thread id: 3. 17/08/12 21:29:26
+21:29:37 RoyGoldman: i did not see it
+21:30:20 Username: Hold on
+21:31:55 Username: Look at your email
+21:32:14 RoyGoldman: for?
+RoyGoldman has disconnected.
+ user changed nick to RoyGoldman
+User Connected! Thread id: 4. 17/08/12 21:32:49
+RoyGoldman tried command users
+21:34:18 RoyGoldman: hello
+ user changed nick to 
+User Connected! Thread id: 5. 17/08/12 21:34:28
+ has disconnected.
+RoyGoldman tried command users
+21:34:51 RoyGoldman: asdf
+21:34:53 RoyGoldman: asdf
+21:34:54 RoyGoldman: asdf
+21:34:54 RoyGoldman: asdf
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:35:24
+ user changed nick to 
+User Connected! Thread id: 1. 17/08/12 21:36:06
+ has disconnected.
+RoyGoldman tried command users
+ user changed nick to 
+User Connected! Thread id: 2. 17/08/12 21:37:14
+21:37:24 : Crudasd
+ has disconnected.
+ user changed nick to 
+User Connected! Thread id: 3. 17/08/12 21:38:30
+21:38:32 : ~Tiger
+21:38:34 : TEst
+21:38:35 : asd
+21:38:36 : as
+21:38:36 : as
+21:38:36 : as
+21:38:36 : as
+21:38:36 : as
+21:38:37 : sa
+21:38:37 : as
+21:38:37 : as
+21:38:38 : as
+ tried command nick
+ user changed nick to Tiger
+21:38:41 Tiger: Test
+21:38:43 Tiger: test
+Tiger tried command users
+Tiger tried command Test
+RoyGoldman tried command users
+Tiger has disconnected.
+ user changed nick to Tiger
+User Connected! Thread id: 4. 17/08/12 21:39:03
+21:39:06 Tiger: test
+21:39:07 Tiger: asd
+21:39:07 Tiger: asd
+21:39:07 Tiger: asd
+21:39:08 Tiger: asd
+21:39:08 Tiger: asd
+21:39:08 Tiger: asd
+21:39:09 Tiger: asd
+21:39:09 Tiger: asd
+21:39:09 Tiger: asd
+21:39:09 Tiger: asd
+21:39:10 Tiger: asd
+21:39:10 Tiger: asd
+Tiger has disconnected.
+RoyGoldman has disconnected.
+FAILURE ON WRITE: THREAD 0!!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 5. 17/08/12 21:40:10
+Started!
+ user changed nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:40:33
+RoyGoldman has disconnected.
+ user changed nick to RoyGoldman
+User Connected! Thread id: 1. 17/08/12 21:41:02
+ user changed nick to tiger
+User Connected! Thread id: 2. 17/08/12 21:41:06
+21:41:08 tiger: ~tiger
+21:41:10 tiger: Tiger
+21:41:11 tiger: There
+21:41:12 tiger: NIggers
+tiger tried command user
+tiger tried command users
+tiger tried command u
+RoyGoldman tried command users
+21:41:27 tiger: Debug
+tiger tried command nick
+tiger user changed nick to Tiger
+Tiger tried command nick
+Tiger user changed nick to KingLinkTiger
+RoyGoldman tried command u
+RoyGoldman tried command nick
+Started!
+ changed their nick to KingLinkTiger
+User Connected! Thread id: 0. 17/08/12 21:43:44
+21:43:47 KingLinkTiger: Test
+ changed their nick to RoyGoldman
+User Connected! Thread id: 1. 17/08/12 21:43:48
+KingLinkTiger tried command users
+21:43:50 KingLinkTiger: Test
+KingLinkTiger tried command u
+KingLinkTiger tried command c
+21:43:55 KingLinkTiger: Tiger
+ changed their nick to Username
+User Connected! Thread id: 2. 17/08/12 21:43:56
+21:44:38 RoyGoldman: hi
+21:44:50 Username: Hello
+21:45:09 Username: Apparently my username is UsernameUsernamehas joined the server!
+21:45:17 RoyGoldman: yea it does that...
+21:45:18 KingLinkTiger: do the user refress
+21:45:19 KingLinkTiger: ./u
+21:45:22 RoyGoldman: i will fix it
+Username tried command users
+21:45:28 Username: Then it works
+21:45:31 KingLinkTiger: That is what we are working on now
+21:45:48 Username: I think you shouldn't send the client any messages until it has sent you its name
+21:46:13 RoyGoldman: maybe
+21:46:26 RoyGoldman: but we do i think...
+21:46:41 RoyGoldman: yea we do clientthread 79
+21:47:06 RoyGoldman: i will move the welcome there but it did not show when i did have it
+RoyGoldman has disconnected.
+KingLinkTiger tried command u
+ changed their nick to RoyGoldman
+User Connected! Thread id: 3. 17/08/12 21:48:33
+RoyGoldman tried command users
+21:48:58 Username: Was that well-behaved?
+21:49:05 Username: Your log-in?
+21:49:30 KingLinkTiger: That was to test the join and leave messages
+21:49:34 KingLinkTiger: to see if they worked at all
+21:49:58 RoyGoldman: no errors
+21:50:01 KingLinkTiger: THIS IS A LONG SENTENCE THAT SHOULD EITHER GET CUT OFF OR IT WILL BE GIVEN A NEW LINE CHARACTER AFTER X AMMOUNT OF CHARACTERS.
+21:50:09 KingLinkTiger: Ok
+21:50:13 KingLinkTiger: That works
+21:50:31 Username: Seems to
+21:50:34 Username: I have to leave
+21:50:40 KingLinkTiger: Ok
+21:50:40 RoyGoldman: okay
+21:50:46 Username: Remember to have someone commit to git
+21:50:52 Username: Smartly
+21:50:57 RoyGoldman: oaky
+Username has disconnected.
+FAILURE ON READ: THREAD 0!!
+KingLinkTiger has disconnected.
+RoyGoldman has disconnected.
+ changed their nick to RoyGoldman
+User Connected! Thread id: 4. 17/08/12 21:52:55
+RoyGoldman tried command users
+RoyGoldman has disconnected.
+ changed their nick to RoyGoldman
+User Connected! Thread id: 5. 17/08/12 21:56:08
+RoyGoldman tried command u
+Started!
+ changed their nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 21:59:25
+Started!
+ changed their nick to RoyGoldman
+User Connected! Thread id: 0. 17/08/12 22:01:36
+22:01:53 RoyGoldman: hello!
+22:01:55 RoyGoldman: asdf
+22:01:55 RoyGoldman: asdf
+22:01:56 RoyGoldman: adsf
+22:01:56 RoyGoldman: adsf
+22:01:57 RoyGoldman: asdf
+22:01:57 RoyGoldman: adf
+22:01:58 RoyGoldman: asdf
+22:01:58 RoyGoldman: sdf

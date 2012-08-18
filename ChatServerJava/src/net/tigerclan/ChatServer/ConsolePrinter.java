@@ -6,29 +6,33 @@ import java.io.IOException;
 
 public class ConsolePrinter {
 	
-	public FileWriter fstream;
-	public static BufferedWriter out;
-	
 	public ConsolePrinter(){
-			  // Create file 
-			  try {
-				fstream = new FileWriter("Console.log");
-				out = new BufferedWriter(fstream);
-			} catch (IOException e) {
-				  System.out.println("Cant connect to log");
-				e.printStackTrace();
-			}
-			  
+
 	}
 	
-	public void write(String t){
+	public static void main(String[] args){
+		write(args[1]);
+	}
+	
+	public static void write(String t){
+		  // Create file 
+		
 		  try {
+			FileWriter fstream;			
+			fstream = new FileWriter("Console.log", true);
+			BufferedWriter out = new BufferedWriter(fstream);
 			out.write(t);
+			out.newLine();
+			out.flush();
+			out.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			  System.out.println("Cant connect to log");
 			e.printStackTrace();
-		}
-		  System.out.println(t);
+		}  
+		  
+		System.out.println(t);
+		  
+		
 	}
 
 }
