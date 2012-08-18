@@ -7,3 +7,4 @@ C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\GenerateResource.read.1.tlog
 C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ChatClient.exe
 C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ChatClient.pdb
+C:\Users\Ryan\Desktop\cs\Chat\ChatClient\obj\Debug\ChatClient.Properties.Resources.resources
