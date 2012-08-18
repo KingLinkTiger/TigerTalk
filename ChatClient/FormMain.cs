@@ -151,7 +151,6 @@ namespace ChatClient
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // label1
@@ -289,7 +288,7 @@ namespace ChatClient
             // 
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = global::ChatClient.Properties.Resources.sound;
+            this.button2.Image = global::ChatClient.Properties.Resources.sound_mute;
             this.button2.Location = new System.Drawing.Point(41, 27);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(23, 23);
@@ -330,6 +329,7 @@ namespace ChatClient
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tiger Chat";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.FormMain_Closing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.onFormClose);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -352,11 +352,44 @@ namespace ChatClient
         /** FORM FUNCTIONS **/
         private void FormMain_Load(object sender, EventArgs e)
         {
+            Random random = new Random();
+            int randomNumber = random.Next(0, 1000);
             MenuStrip MainMenu = new MenuStrip();
+            m_tbServerAddress.Text = Properties.Settings.Default.ip;
+            textBox2.BackColor = Properties.Settings.Default.backColor;
+            textBox2.ForeColor = Properties.Settings.Default.foreColor;
+            listBox1.BackColor = Properties.Settings.Default.backColor;
+            listBox1.ForeColor = Properties.Settings.Default.foreColor;
+            if (Properties.Settings.Default.nick == "Tiger")
+            {
+                textBox1.Text = Properties.Settings.Default.nick + randomNumber;
+            }
+            else
+            {
+                textBox1.Text = Properties.Settings.Default.nick;
+            }
+            this.Height = Properties.Settings.Default.Height;
+            this.Width = Properties.Settings.Default.Width;
         }
 
         private void FormMain_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            if (m_sock != null && m_sock.Connected)
+            {
+                m_sock.Shutdown(SocketShutdown.Both);
+                m_sock.Close();
+            }
+        }
+
+        private void onFormClose(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.ip = m_tbServerAddress.Text;
+            Properties.Settings.Default.foreColor = textBox2.ForeColor;
+            Properties.Settings.Default.backColor = textBox2.BackColor;
+            Properties.Settings.Default.nick = textBox1.Text;
+            Properties.Settings.Default.Height = this.Height;
+            Properties.Settings.Default.Width = this.Width;
+            Properties.Settings.Default.Save();
             if (m_sock != null && m_sock.Connected)
             {
                 m_sock.Shutdown(SocketShutdown.Both);
@@ -373,8 +406,17 @@ namespace ChatClient
             public Boolean playsound = false;
             //ArrayList
             public ArrayList messages = new ArrayList();
+            //Ints
+            public int index = 0;
 
         /** FUNCTIONS **/
+            public void controla(TextBox box, KeyEventArgs e)
+            {
+                if ((System.Windows.Forms.Control.ModifierKeys == Keys.Control) && (e.KeyValue == (char)Keys.A))
+                {
+                    box.SelectAll();
+                }
+            }
             public void sendNick()
             {
                 if (m_sock == null || !m_sock.Connected)
@@ -390,10 +432,7 @@ namespace ChatClient
             public void addMessage(String m)
             {
                 messages.Add(m);
-            }
-            private void textBox1_TextChanged(object sender, EventArgs e)
-            {
-
+                index++;
             }
 
             public void OnAddMessage(string sMessage)
@@ -409,7 +448,7 @@ namespace ChatClient
                 }
                 else
                 {
-                    textBox2.Text = textBox2.Text + sMessage + "\r\n";
+                    textBox2.Text = textBox2.Text + sMessage;
 
                     if (playsound == true)
                     {
@@ -496,7 +535,9 @@ namespace ChatClient
             {
                 if (listBox1.SelectedItem != null && (listBox1.SelectedItem.ToString().Length != 0))
                 {
-                    m_tbMessage.Text = "/msg " + listBox1.SelectedItem + " ";
+                    String name = (string)listBox1.SelectedItem;
+                    name = name.Trim();
+                    m_tbMessage.Text = "/msg " + name + " ";
                     m_tbMessage.Focus();
                     m_tbMessage.SelectionStart = m_tbMessage.Text.Length + 1;
                 }
@@ -544,13 +585,13 @@ namespace ChatClient
             {
                 if (playsound == false)
                 {
-                    this.button2.Image = ((System.Drawing.Image)(Properties.Resources.sound_mute));
+                    this.button2.Image = ((System.Drawing.Image)(Properties.Resources.sound));
                     sound_text = "Mute Sounds";
                     playsound = true;
                 }
                 else if (playsound == true)
                 {
-                    this.button2.Image = ((System.Drawing.Image)(Properties.Resources.sound));
+                    this.button2.Image = ((System.Drawing.Image)(Properties.Resources.sound_mute));
                     sound_text = "Play Sounds";
                     playsound = false;
                 }
@@ -666,6 +707,7 @@ namespace ChatClient
                 {
                     m_btnConnect.PerformClick();
                 }
+                controla(m_tbServerAddress, e);
             }
 
             private void textBox1_KeyDown(object sender, KeyEventArgs e)
@@ -675,10 +717,12 @@ namespace ChatClient
                     sendNick();
                     e.SuppressKeyPress = true;
                 }
+                controla(textBox1, e);
             }
 
             protected void m_tbMessage_keyDown(object sender, KeyEventArgs e)
             {
+                
                 if (e.KeyValue == 13) //13 = enter
                 {
                     m_btnSend.PerformClick();
@@ -686,10 +730,32 @@ namespace ChatClient
                 }
                 else if (e.KeyValue == 38)
                 {
-                    int index = (messages.Count - 1);
+                    index--;
+                    if (index < 0)
+                    {
+                        index = 0;
+                    }
+                    else if (index > (messages.Count-1))
+                    {
+                        index = messages.Count-1;
+                    }
                     string text = (string)messages[index];
                     m_tbMessage.Text = text;
 
+                }
+                else if (e.KeyCode == Keys.Down)
+                {
+                    index++;
+                    if (index < 0)
+                    {
+                        index = 0;
+                    }
+                    else if (index > (messages.Count - 1))
+                    {
+                        index = messages.Count - 1;
+                    }
+                    string text = (string)messages[index];
+                    m_tbMessage.Text = text;
                 }
                 else if (e.KeyCode == Keys.Tab)
                 {
@@ -698,19 +764,29 @@ namespace ChatClient
                     foreach (String item in listBox1.Items)
                     {
 
-                        if (item.IndexOf(word) >= 0 )
+                        if (item.IndexOf(word, StringComparison.OrdinalIgnoreCase) >= 0)
                         {
-                            words[words.Length - 1] = item;
+                            words[words.Length - 1] = item.Trim();
                             m_tbMessage.Text = "";
+                            int i = 0;
                             foreach (string word1 in words)
                             {
-                                
-                                m_tbMessage.AppendText(word1);
+                                if (i == 0)
+                                {
+                                    m_tbMessage.AppendText(word1);
+                                }
+                                else
+                                {
+                                    m_tbMessage.AppendText(" " + word1);
+                                }
+                                i++;
                             }
-                            m_tbMessage.Focus();
-
                         }
-                    } 
+                    }
+                }
+                else if ((System.Windows.Forms.Control.ModifierKeys == Keys.Control) && (e.KeyValue == (char)Keys.A))
+                {
+                    m_tbMessage.SelectAll();
                 }
             }
 
