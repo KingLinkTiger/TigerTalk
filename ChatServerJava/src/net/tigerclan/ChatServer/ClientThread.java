@@ -1,6 +1,7 @@
 package net.tigerclan.ChatServer;
 
 import java.io.*;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -14,9 +15,12 @@ public class ClientThread extends Thread {
 	int id;
 	public boolean running;
 	OutputStream os;
+	BufferedReader is;
+	InetAddress ip;
 	public String nickname = "";
 	boolean setupDone = false;
 	ConcurrentLinkedQueue<String> chats;
+	
 	public ClientThread(Socket s,int id,ConcurrentLinkedQueue<String> chats) {
 		this.s = s;
 		running = true;
@@ -25,20 +29,12 @@ public class ClientThread extends Thread {
 	}
 	
 	public void run(){
-		BufferedReader is;
-
 		try {
-			os = s.getOutputStream();
-			os.write(new String("\r\n*******************************************************\r\n").getBytes());
-			os.write(new String("Welcome! Server time is " + dateFormat.format(new Date()) + "\r\n").getBytes());
-			os.write(new String("*******************************************************\r\n").getBytes());
-			is =  new BufferedReader(new InputStreamReader(s.getInputStream()));
-			setupDone = true;
 			String commandline;
 			String[] commandarray;
-			String line = is.readLine();
+			String line;
 			String send = "";
-			userConnect(line);
+			userConnect();
 			while (running){
 					if (!s.isConnected()){//Disconnect
 						running = false;
@@ -72,26 +68,39 @@ public class ClientThread extends Thread {
 
 	}
 	
-	public void userDisconnect() {
-		running = false;
-		ChatServer.closeConnection(this);
-		chats.add(nickname + " has left the server!");
-		ConsolePrinter.write(nickname + " has disconnected.");
+	public void userConnect() {
 		
-	}
-
-	public void userConnect(String line) {
-
+		String line = "";
+		try {
+			os = s.getOutputStream();
+			os.write(new String("\r\n*******************************************************\r\n").getBytes());
+			os.write(new String("Welcome! Server time is " + dateFormat.format(new Date()) + "\r\n").getBytes());
+			os.write(new String("*******************************************************\r\n").getBytes());
+			is =  new BufferedReader(new InputStreamReader(s.getInputStream()));
+			setupDone = true;
+			line = is.readLine();
+			ip = s.getInetAddress();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		if (isNickSend(line)){
 			line = line.substring(1);
 			setNick(line, false);
 		}
-		ConsolePrinter.write(nickname + " Connected! Thread id: " + id + ". " + dateFormat.format(new Date()));
+		ConsolePrinter.write(nickname + " connected! Thread id: " + id + ". " + dateFormat.format(new Date()) + " with an ip of " + ip.toString() + ".");
 		MOTD();
 		chats.add(nickname + " has joined the server!");
 		DistributorThread.sendUsers();
 	}
 
+	
+	public void userDisconnect() {
+		running = false;
+		ChatServer.closeConnection(this);
+		chats.add(nickname + " has left the server!");
+		ConsolePrinter.write(nickname + " has disconnected. (IP: " + ip.toString() + ")");
+	}
 	public void MOTD(){
 		try {
 			    BufferedReader motd = new BufferedReader(new FileReader("MOTD"));
