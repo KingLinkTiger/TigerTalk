@@ -11,7 +11,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class ChatServer {
 	static int id = 0;
-
+	static int socket = 399;
+	public static boolean running = false;
 	public static Vector<ClientThread> thread_pool = new Vector<ClientThread>();
 	/**
 	 * @param args
@@ -19,25 +20,28 @@ public class ChatServer {
 	public static void main(String[] args){
 		ServerSocket ss;
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
-		boolean running = true;
 		ConcurrentLinkedQueue<String> chats = new ConcurrentLinkedQueue<String>();
 		DistributorThread ds = new DistributorThread(chats, thread_pool);
 		ConsolePrinter.write("Started! --- Server Start Time: " + dateFormat.format(new Date()));
 		ds.start();
 		try {
-			ss = new ServerSocket(399);
+			ss = new ServerSocket(socket);
+			running = true;
 		} catch (IOException e) {
-			e.printStackTrace();
-			System.err.println("FAIL!");
+			ConsolePrinter.write("Could not bind to Socket!");
+			ConsolePrinter.write("Startup failed.");
+			System.exit(1);
 			return;
 		}
-		ConsolePrinter.write("Server Running");
+		if(running){
+			ConsolePrinter.write("Server Running");			
+		}
+
 		while (running){
 			Socket s;
 			try {
 				s = ss.accept();
 			} catch (IOException e) {
-				e.printStackTrace();
 				return;
 			}
 			thread_pool.add(new ClientThread(s, id, chats));
@@ -50,6 +54,10 @@ public class ChatServer {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public static void loadSettings(){
+		
 	}
 	
 	public static void closeConnection(ClientThread th){
@@ -66,6 +74,10 @@ public class ChatServer {
 			}
 		}
 		
+	}
+
+	public static Vector<ClientThread> getPool() {
+		return thread_pool;
 	}
 
 }

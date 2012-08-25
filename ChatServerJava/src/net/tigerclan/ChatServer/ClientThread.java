@@ -6,6 +6,7 @@ import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Vector;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class ClientThread extends Thread {
@@ -88,7 +89,7 @@ public class ClientThread extends Thread {
 			line = line.substring(1);
 			setNick(line, false);
 		}
-		ConsolePrinter.write(nickname + " connected! Thread id: " + id + ". " + dateFormat.format(new Date()) + " with an ip of " + ip.toString() + ".");
+		ConsolePrinter.write(nickname + " connected! Thread id: " + id + ". " + dateFormat.format(new Date()) + " with an ip of " + ip.toString().substring(1) + ".");
 		MOTD();
 		chats.add(nickname + " has joined the server!");
 		DistributorThread.sendUsers();
@@ -99,7 +100,7 @@ public class ClientThread extends Thread {
 		running = false;
 		ChatServer.closeConnection(this);
 		chats.add(nickname + " has left the server!");
-		ConsolePrinter.write(nickname + " has disconnected. (IP: " + ip.toString() + ")");
+		ConsolePrinter.write(nickname + " has disconnected. (IP: " + ip.toString().substring(1) + ")");
 	}
 	public void MOTD(){
 		try {
@@ -191,8 +192,72 @@ public class ClientThread extends Thread {
 		}else if (command.equalsIgnoreCase("discon") || command.equalsIgnoreCase("dc") || command.equalsIgnoreCase("disconnect")){
 			userDisconnect();
 			//write("Sorry that would crash the server!");
+		}else if (command.equalsIgnoreCase("ping")){
+			if(c.length >= 2)
+			{
+				write("Attempting Your Ping...");
+				ping(c[1]);
+			} else {
+				write("No target specified for ping!");
+			}
 		}else{
 			write("/" + command + " is not a valid command.");
+		}
+	}
+
+	private void ping(String target) {
+		Vector<ClientThread> thread_pool = ChatServer.getPool();
+		boolean sent = false;
+		for(ClientThread ct : thread_pool){
+			if (ct.nickname.equals(target)){
+				Process p;
+				String[] result = new String[3];
+				int i = 0;
+				try {
+					p = Runtime.getRuntime().exec("cmd /c ping " + ct.ip.toString().substring(1) + " -n 3");
+				try {
+					p.waitFor();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} 
+				BufferedReader reader=new BufferedReader(new InputStreamReader(p.getInputStream())); 
+				String line=reader.readLine(); 
+				while(line!=null) 
+				{ 
+					if(line.length() > 0){
+						if(line.substring(0, 3) == "Reply" && i < 3){
+							result[i] = line;
+							i++;
+						}
+					}
+				line=reader.readLine(); 
+				} 
+				} catch (IOException e) {
+					write("Can't Run ping command");
+					e.printStackTrace();
+				} 
+				write(result.length + "");
+				if (i == 2){
+					int num = 0;
+					int[] pings = new int[3];
+					for (String s : result){
+						write(s);
+						s = s.substring(s.indexOf("time"));	
+						pings[num] = Integer.parseInt(s);
+					}
+					int average = (pings[1] + pings[2] + pings[3]) / 3;
+						write("ping: " + average);
+				} else {
+					write("Your ping failed!");
+					return;
+				}
+				sent = true;
+			}
+			if (!sent){
+				write("Can't find target!");
+				return;
+			}
 		}
 	}
 
