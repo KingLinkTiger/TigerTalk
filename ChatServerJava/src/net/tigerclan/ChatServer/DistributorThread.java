@@ -20,13 +20,16 @@ public class DistributorThread extends Thread {
 	public void run(){
 		String chat;
 		while (running){
-			if (chats.peek() != null && thread_pool.size() > 0){
-				chat = chats.poll();
-				for (ClientThread th : thread_pool){		//<< where disconnect and kick fail
-					if (th.running == false){//Needs to be cleaned up
-						thread_pool.remove(th);
-					}else{
-					th.write(chat);
+			if (chats.peek() != null){
+				if (thread_pool.size() > 0 ){
+					
+					chat = chats.poll();
+					for (ClientThread th : thread_pool){		//<< where disconnect and kick fail
+						if (th.running == false){//Needs to be cleaned up
+							thread_pool.remove(th);
+						}else{
+						th.write(chat);
+						}
 					}
 				}
 			}else{// Nothing to do
@@ -34,19 +37,6 @@ public class DistributorThread extends Thread {
 			}
 			
 		}
-	}
-	
-	public static void sendUsers() {
-		String users = "~";
-		boolean first = true;
-		for (ClientThread th : thread_pool){
-			if (!first) {
-				users = users + ",";
-			}
-			users = users + th.nickname;
-			first = false;
-		}
-			chats.add(users);
 	}
 	
 	public static void connectUsers(ClientThread ct){
@@ -73,7 +63,6 @@ public class DistributorThread extends Thread {
 				
 				String start = ">> From " + sender.nickname + ": ";
 				String msg = "";
-				boolean first = true;
 				boolean sent = false;
 				for ( int loop = 2; loop < c.length; loop++){
 					msg = msg + c[loop] + " ";

@@ -21,11 +21,12 @@ public class ClientThread extends Thread {
 	public String nickname = "";
 	boolean setupDone = false;
 	ConcurrentLinkedQueue<String> chats;
+	ChannelThread channel = null;
+	boolean inRoom = false;
 	
-	public ClientThread(Socket s,int id,ConcurrentLinkedQueue<String> chats) {
+	public ClientThread(Socket s,int id) {
 		this.s = s;
 		running = true;
-		this.chats = chats;
 		this.id = id;
 	}
 	
@@ -35,6 +36,7 @@ public class ClientThread extends Thread {
 			String[] commandarray;
 			String line;
 			String send = "";
+			String logger = "";
 			userConnect();
 			while (running){
 					if (!s.isConnected()){//Disconnect
@@ -49,9 +51,14 @@ public class ClientThread extends Thread {
 							commandarray = commandline.split(" ");
 							runCommand(commandarray);
 						} else {
-							send = timeStamp() + nickname+ ": " + line;
-							chats.add(send);
-							ConsolePrinter.write(send);
+							if (inRoom){
+								send = timeStamp() + nickname+ ": " + line;
+								logger = "(" + channel.name + ")" + send;
+								chats.add(send);
+								ConsolePrinter.write(logger);
+							} else {
+								write("Sorry you are not in a channel. Join a channel to talk.");
+							}
 						}
 					}else{// This means someone disconnected.
 						running = false;
@@ -74,9 +81,6 @@ public class ClientThread extends Thread {
 		String line = "";
 		try {
 			os = s.getOutputStream();
-			os.write(new String("\r\n*******************************************************\r\n").getBytes());
-			os.write(new String("Welcome! Server time is " + dateFormat.format(new Date()) + "\r\n").getBytes());
-			os.write(new String("*******************************************************\r\n").getBytes());
 			is =  new BufferedReader(new InputStreamReader(s.getInputStream()));
 			setupDone = true;
 			line = is.readLine();
@@ -91,18 +95,21 @@ public class ClientThread extends Thread {
 		}
 		ConsolePrinter.write(nickname + " connected! Thread id: " + id + ". " + dateFormat.format(new Date()) + " with an ip of " + ip.toString().substring(1) + ".");
 		MOTD();
-		chats.add(nickname + " has joined the server!");
-		DistributorThread.sendUsers();
 	}
 
 	
 	public void userDisconnect() {
 		running = false;
+		channel.dropUser(this);
 		ChatServer.closeConnection(this);
 		chats.add(nickname + " has left the server!");
 		ConsolePrinter.write(nickname + " has disconnected. (IP: " + ip.toString().substring(1) + ")");
 	}
+	
 	public void MOTD(){
+		write("*******************************************************");
+		write("Welcome! Server time is " + dateFormat.format(new Date()));
+		write("*******************************************************");
 		try {
 			    BufferedReader motd = new BufferedReader(new FileReader("MOTD"));
 			    String str;
@@ -118,7 +125,7 @@ public class ClientThread extends Thread {
 	public void write(String input){
 		try {
 			if (setupDone){
-				os.write((input + "\r\n").getBytes());
+				os.write(new String(input + "\r\n").getBytes());
 			}
 		} catch (IOException e) {
 			ConsolePrinter.write("FAILURE ON WRITE: THREAD "+ id +"!!");
@@ -148,13 +155,13 @@ public class ClientThread extends Thread {
 	private void setNick(String n, boolean a) {
 		if (a){
 			ConsolePrinter.write(nickname + " changed their nick to " + n + ".");
-			chats.add(nickname + " is now know as " + n + ".");
+			chats.add(nickname + " is now known as " + n + ".");
 		}
 			nickname = n;
 	}
 	
 	public void reloadUsers(){
-		DistributorThread.sendUsers();
+		channel.sendUsers();
 	}
 	
 	public void runCommand(String[] c){
@@ -184,11 +191,18 @@ public class ClientThread extends Thread {
 		}else if (command.equalsIgnoreCase("help") || command.equalsIgnoreCase("?") || command.equalsIgnoreCase("h")){
 			write("Commands are: version, me, nick, message, disconnect, and help.");
 		}else if (command.equalsIgnoreCase("msg") || command.equalsIgnoreCase("message") || command.equalsIgnoreCase("m")){
-			DistributorThread.sendMessage(c, this);
+			//DistributorThread.sendMessage(c, this);
+			write("this command has been disabled");
 		}else if (command.equalsIgnoreCase("users") || command.equalsIgnoreCase("user") || command.equalsIgnoreCase("u")){
 			reloadUsers();
 		}else if (command.equalsIgnoreCase("test")){
 			write("Testing!");
+		}else if (command.equalsIgnoreCase("chan")){
+			if(c.length > 1){
+				ChatServer.changeChannel(this, c);
+			}else{
+				
+			}
 		}else if (command.equalsIgnoreCase("discon") || command.equalsIgnoreCase("dc") || command.equalsIgnoreCase("disconnect")){
 			userDisconnect();
 			//write("Sorry that would crash the server!");
@@ -260,5 +274,8 @@ public class ClientThread extends Thread {
 			}
 		}
 	}
-
+	
+	public void giveChats(ConcurrentLinkedQueue<String> given){
+		chats = given;
+	}
 }
