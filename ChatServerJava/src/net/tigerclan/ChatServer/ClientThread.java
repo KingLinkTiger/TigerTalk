@@ -49,7 +49,8 @@ public class ClientThread extends Thread {
 						if (isCommand(line)){
 							commandline = line.substring(line.indexOf('/') + 1);
 							commandarray = commandline.split(" ");
-							runCommand(commandarray);
+							//runCommand(commandarray);
+							Command.userRun(commandarray, this);
 						} else {
 							if (inRoom){
 								send = timeStamp() + nickname+ ": " + line;
@@ -72,6 +73,12 @@ public class ClientThread extends Thread {
 			running = false;
 		}
 		
+		try {
+			s.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		userDisconnect();
 
 	}
@@ -124,7 +131,7 @@ public class ClientThread extends Thread {
 	
 	public void write(String input){
 		try {
-			if (setupDone){
+			if (setupDone && input != null){
 				os.write(new String(input + "\r\n").getBytes());
 			}
 		} catch (IOException e) {
@@ -152,7 +159,7 @@ public class ClientThread extends Thread {
 		return "<" + time.format(new Date()) + "> ";
 	}
 	
-	private void setNick(String n, boolean a) {
+	public void setNick(String n, boolean a) {
 		if (a){
 			ConsolePrinter.write(nickname + " changed their nick to " + n + ".");
 			chats.add(nickname + " is now known as " + n + ".");
@@ -162,117 +169,6 @@ public class ClientThread extends Thread {
 	
 	public void reloadUsers(){
 		channel.sendUsers();
-	}
-	
-	public void runCommand(String[] c){
-		String command = c[0];
-		ConsolePrinter.write(nickname + " tried command " + command);
-		if(command.equals("server") || command.equals("version"))
-		{
-			write("This server is running Tiger Chat v1.0");
-		}else if(command.equals("me")){
-			//write("you tried command me!");
-			String message = "";
-			int loop = 0;
-			for(String arg : c){
-				if (loop == 0) {
-					
-				} else {
-					message = message + arg + " ";
-				}
-				loop++;
-			}
-			chats.add("**" + nickname + " " + message);
-		}else if(command.equalsIgnoreCase("nick")){			
-			setNick(c[1], true);
-		}else if(command.equalsIgnoreCase("kick")){
-			ChatServer.kicker(c[1]);
-			//write("Sorry that would crash the server!");
-		}else if (command.equalsIgnoreCase("help") || command.equalsIgnoreCase("?") || command.equalsIgnoreCase("h")){
-			write("Commands are: version, me, nick, message, disconnect, and help.");
-		}else if (command.equalsIgnoreCase("msg") || command.equalsIgnoreCase("message") || command.equalsIgnoreCase("m")){
-			//DistributorThread.sendMessage(c, this);
-			write("this command has been disabled");
-		}else if (command.equalsIgnoreCase("users") || command.equalsIgnoreCase("user") || command.equalsIgnoreCase("u")){
-			reloadUsers();
-		}else if (command.equalsIgnoreCase("test")){
-			write("Testing!");
-		}else if (command.equalsIgnoreCase("chan")){
-			if(c.length > 1){
-				ChatServer.changeChannel(this, c);
-			}else{
-				
-			}
-		}else if (command.equalsIgnoreCase("discon") || command.equalsIgnoreCase("dc") || command.equalsIgnoreCase("disconnect")){
-			userDisconnect();
-			//write("Sorry that would crash the server!");
-		}else if (command.equalsIgnoreCase("ping")){
-			if(c.length >= 2)
-			{
-				write("Attempting Your Ping...");
-				ping(c[1]);
-			} else {
-				write("No target specified for ping!");
-			}
-		}else{
-			write("/" + command + " is not a valid command.");
-		}
-	}
-
-	private void ping(String target) {
-		Vector<ClientThread> thread_pool = ChatServer.getPool();
-		boolean sent = false;
-		for(ClientThread ct : thread_pool){
-			if (ct.nickname.equals(target)){
-				Process p;
-				String[] result = new String[3];
-				int i = 0;
-				try {
-					p = Runtime.getRuntime().exec("cmd /c ping " + ct.ip.toString().substring(1) + " -n 3");
-				try {
-					p.waitFor();
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} 
-				BufferedReader reader=new BufferedReader(new InputStreamReader(p.getInputStream())); 
-				String line=reader.readLine(); 
-				while(line!=null) 
-				{ 
-					if(line.length() > 0){
-						if(line.substring(0, 3) == "Reply" && i < 3){
-							result[i] = line;
-							i++;
-						}
-					}
-				line=reader.readLine(); 
-				} 
-				} catch (IOException e) {
-					write("Can't Run ping command");
-					e.printStackTrace();
-				} 
-				write(result.length + "");
-				if (i == 2){
-					int num = 0;
-					int[] pings = new int[3];
-					for (String s : result){
-						write(s);
-						s = s.substring(s.indexOf("time"));	
-						pings[num] = Integer.parseInt(s);
-					}
-					int average = (pings[1] + pings[2] + pings[3]) / 3;
-						write("ping: " + average);
-				} else {
-					write("Your ping failed!");
-					return;
-				}
-				sent = true;
-			}
-			if (!sent){
-				write("Can't find target!");
-				return;
-			}
-		}
 	}
 	
 	public void giveChats(ConcurrentLinkedQueue<String> given){

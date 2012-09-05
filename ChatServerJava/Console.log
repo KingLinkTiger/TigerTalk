@@ -7731,3 +7731,811 @@ RoyGoldman tried command u
 (Tiger)<21:48:54> RoyGoldman: 
 (Tiger)<21:48:54> RoyGoldman: 
 RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 28/08/12 21:57:18. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 28/08/12 21:57:49 with an ip of 192.168.1.104.
+Username connected! Thread id: 1. 28/08/12 21:57:51 with an ip of 24.115.40.150.
+Username tried command chan
+(abc)<21:58:18> Username: Kel
+(abc)<21:58:20> Username: Kewl
+RoyGoldman tried command chan
+(abc)<21:58:33> RoyGoldman: hello
+RoyGoldman tried command u
+(abc)<21:58:44> Username: Hey, this is a newer client than I've seen, this is cool
+(abc)<21:58:52> RoyGoldman: yes it is very nice
+(abc)<21:58:53> Username: Faster, too
+(abc)<21:58:56> Username: null
+(abc)<21:59:01> RoyGoldman: that is the only bug
+(abc)<21:59:01> RoyGoldman: 
+(abc)<21:59:08> Username: That's okay
+(abc)<21:59:15> RoyGoldman: that i know of
+(abc)<21:59:30> RoyGoldman: there were alot more i fixed most of them
+(abc)<21:59:47> Username: Kewl
+(abc)<22:00:17> RoyGoldman: like for a while the you did not see each other
+FAILURE ON READ: THREAD 1!!
+Username has disconnected. (IP: 24.115.40.150)
+Started! --- Server Start Time: 28/08/12 22:03:12. Server IP: Lucus/192.168.1.104
+Server Running
+Username connected! Thread id: 0. 28/08/12 22:03:26 with an ip of 24.115.40.150.
+RoyGoldman connected! Thread id: 1. 28/08/12 22:03:30 with an ip of 192.168.1.104.
+Username tried command chan
+(abc)<22:03:36> Username: Test
+(abc)<22:03:39> Username: test
+RoyGoldman tried command chan
+(abc)<22:03:53> RoyGoldman: asdf
+Username has disconnected. (IP: 24.115.40.150)
+Started! --- Server Start Time: 29/08/12 08:53:59. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 29/08/12 08:54:04 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(Nick)<08:54:12> RoyGoldman: asdf
+(Nick)<08:54:12> RoyGoldman: 
+(Nick)<08:54:12> RoyGoldman: 
+(Nick)<08:54:12> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:13> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:14> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:15> RoyGoldman: 
+(Nick)<08:54:17> RoyGoldman: dasdfhasdflasdhfhasd
+(Nick)<08:54:17> RoyGoldman: as
+(Nick)<08:54:17> RoyGoldman: d
+(Nick)<08:54:17> RoyGoldman: d
+(Nick)<08:54:17> RoyGoldman: d
+(Nick)<08:54:17> RoyGoldman: d
+(Nick)<08:54:17> RoyGoldman: 
+(Nick)<08:54:17> RoyGoldman: d
+RoyGoldman tried command chan
+(tiger)<08:54:24> RoyGoldman: sdf
+(tiger)<08:54:24> RoyGoldman: 
+(tiger)<08:54:24> RoyGoldman: d
+(tiger)<08:54:24> RoyGoldman: d
+(tiger)<08:54:24> RoyGoldman: 
+(tiger)<08:54:25> RoyGoldman: dd
+(tiger)<08:54:25> RoyGoldman: d
+(tiger)<08:54:25> RoyGoldman: d
+(tiger)<08:54:25> RoyGoldman: 
+(tiger)<08:54:26> RoyGoldman: d
+(tiger)<08:54:26> RoyGoldman: d
+(tiger)<08:54:26> RoyGoldman: d
+(tiger)<08:54:27> RoyGoldman: d
+(tiger)<08:54:27> RoyGoldman: d
+(tiger)<08:54:27> RoyGoldman: d
+(tiger)<08:54:28> RoyGoldman: d
+(tiger)<08:54:28> RoyGoldman: 
+(tiger)<08:54:28> RoyGoldman: d
+(tiger)<08:54:28> RoyGoldman: d
+(tiger)<08:54:28> RoyGoldman: d
+(tiger)<08:54:29> RoyGoldman: 
+(tiger)<08:54:29> RoyGoldman: c
+(tiger)<08:54:29> RoyGoldman: 
+(tiger)<08:54:30> RoyGoldman: vdhskfjhasdhflad'fsad
+(tiger)<08:54:30> RoyGoldman: 
+(tiger)<08:54:30> RoyGoldman: sdf
+(tiger)<08:54:30> RoyGoldman: d
+(tiger)<08:54:31> RoyGoldman: d
+(tiger)<08:54:31> RoyGoldman: s
+(tiger)<08:54:31> RoyGoldman: f
+(tiger)<08:54:31> RoyGoldman: s
+(tiger)<08:54:31> RoyGoldman: df
+(tiger)<08:54:31> RoyGoldman: s
+(tiger)<08:54:31> RoyGoldman: f
+(tiger)<08:54:32> RoyGoldman: asdfgjhajksgas
+(tiger)<08:54:32> RoyGoldman: KJ'D
+(tiger)<08:54:33> RoyGoldman: ;
+(tiger)<08:54:33> RoyGoldman: ;A
+(tiger)<08:54:33> RoyGoldman: F;
+(tiger)<08:54:33> RoyGoldman: A;E
+(tiger)<08:54:33> RoyGoldman: ;E
+(tiger)<08:54:34> RoyGoldman: ;EF;
+(tiger)<08:54:34> RoyGoldman: E;F
+(tiger)<08:54:34> RoyGoldman: E;
+(tiger)<08:54:34> RoyGoldman: F;E
+(tiger)<08:54:35> RoyGoldman: F;
+(tiger)<08:54:35> RoyGoldman: E;
+(tiger)<08:54:35> RoyGoldman: F;E
+(tiger)<08:54:35> RoyGoldman: F;E
+(tiger)<08:54:35> RoyGoldman: F;
+(tiger)<08:54:35> RoyGoldman: E;
+(tiger)<08:54:36> RoyGoldman: ;EF
+(tiger)<08:54:36> RoyGoldman: ;E
+(tiger)<08:54:36> RoyGoldman: F;E
+(tiger)<08:54:36> RoyGoldman: F;E
+(tiger)<08:54:36> RoyGoldman: ;F
+(tiger)<08:54:37> RoyGoldman: E;F
+(tiger)<08:54:40> RoyGoldman: ;
+(tiger)<08:54:40> RoyGoldman: 
+(tiger)<08:54:40> RoyGoldman: d
+(tiger)<08:54:41> RoyGoldman: 
+(tiger)<08:54:41> RoyGoldman: d
+(tiger)<08:54:41> RoyGoldman: d
+(tiger)<08:54:41> RoyGoldman: d
+(tiger)<08:54:42> RoyGoldman: dhajkgd
+(tiger)<08:54:43> RoyGoldman: 
+(tiger)<08:54:44> RoyGoldman: adhahdshfl
+(tiger)<08:54:44> RoyGoldman: 
+(tiger)<08:54:44> RoyGoldman: asdf
+(tiger)<08:54:44> RoyGoldman: 
+(tiger)<08:54:44> RoyGoldman: 
+(tiger)<08:54:44> RoyGoldman: 
+(tiger)<08:54:44> RoyGoldman: 
+(tiger)<08:54:45> RoyGoldman: 
+(tiger)<08:54:45> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: d
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:46> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+(tiger)<08:54:47> RoyGoldman: 
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 29/08/12 08:55:38. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 29/08/12 08:55:41 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(ahsdf)<08:55:48> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+(ahsdf)<08:55:49> RoyGoldman: 
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 29/08/12 08:57:21. Server IP: Lucus/192.168.1.104
+Could not bind to Socket!
+Startup failed.
+Started! --- Server Start Time: 29/08/12 08:57:29. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 29/08/12 08:57:34 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(thi)<08:57:40> RoyGoldman: asdf
+(thi)<08:57:40> RoyGoldman: d
+(thi)<08:57:40> RoyGoldman: d
+(thi)<08:57:41> RoyGoldman: d
+(thi)<08:57:42> RoyGoldman: d
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:42> RoyGoldman: 
+(thi)<08:57:43> RoyGoldman: 
+(thi)<08:57:43> RoyGoldman: 
+(thi)<08:57:43> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:44> RoyGoldman: 
+(thi)<08:57:45> RoyGoldman: 
+(thi)<08:57:45> RoyGoldman: asd
+(thi)<08:57:46> RoyGoldman: 
+(thi)<08:57:47> RoyGoldman: dsaf
+(thi)<08:57:47> RoyGoldman: 
+(thi)<08:57:48> RoyGoldman: fasd
+(thi)<08:57:49> RoyGoldman: 
+(thi)<08:57:49> RoyGoldman: 
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 29/08/12 09:19:47. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 29/08/12 09:20:02 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(This)<09:20:14> RoyGoldman: asdf
+RoyGoldman tried command u
+RoyGoldman tried command me
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 29/08/12 09:25:43. Server IP: Lucus/192.168.1.104
+Server Running
+Started! --- Server Start Time: 31/08/12 22:41:18. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 31/08/12 22:41:26 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(CHAN)<22:41:35> RoyGoldman: asdf
+(CHAN)<22:41:35> RoyGoldman: d
+(CHAN)<22:41:35> RoyGoldman: 
+(CHAN)<22:41:35> RoyGoldman: d
+(CHAN)<22:41:36> RoyGoldman: d
+(CHAN)<22:41:37> RoyGoldman: dasdfhdhdhd
+(CHAN)<22:41:37> RoyGoldman: 
+(CHAN)<22:41:37> RoyGoldman: d
+(CHAN)<22:41:37> RoyGoldman: d
+(CHAN)<22:41:38> RoyGoldman: 
+(CHAN)<22:41:38> RoyGoldman: dhjdhdhd
+(CHAN)<22:41:38> RoyGoldman: 
+(CHAN)<22:41:39> RoyGoldman: 
+(CHAN)<22:41:39> RoyGoldman: 
+(CHAN)<22:41:40> RoyGoldman: ddhdhhd
+(CHAN)<22:41:40> RoyGoldman: dhjdhd
+(CHAN)<22:41:41> RoyGoldman: hdhd
+(CHAN)<22:41:42> RoyGoldman: dhdhd
+(CHAN)<22:41:43> RoyGoldman: dhdhd
+(CHAN)<22:41:43> RoyGoldman: dhdhd
+(CHAN)<22:41:44> RoyGoldman: dhdhd
+(CHAN)<22:41:44> RoyGoldman: dhdhd
+(CHAN)<22:41:45> RoyGoldman: dhdhd
+RoyGoldman tried command chan
+(NICK)<22:41:50> RoyGoldman: asdf
+(NICK)<22:41:50> RoyGoldman: d
+(NICK)<22:41:51> RoyGoldman: d
+(NICK)<22:41:51> RoyGoldman: d
+RoyGoldman tried command chan
+(Tiger)<22:41:57> RoyGoldman: asd
+(Tiger)<22:41:57> RoyGoldman: d
+(Tiger)<22:41:57> RoyGoldman: d
+RoyGoldman tried command chan
+(CHAN)<22:42:03> RoyGoldman: asd
+(CHAN)<22:42:03> RoyGoldman: d
+(CHAN)<22:42:03> RoyGoldman: d
+(CHAN)<22:42:04> RoyGoldman: d
+(CHAN)<22:42:04> RoyGoldman: d
+(CHAN)<22:42:04> RoyGoldman: d
+(CHAN)<22:42:05> RoyGoldman: d
+(CHAN)<22:42:05> RoyGoldman: d
+(CHAN)<22:42:06> RoyGoldman: d
+(CHAN)<22:42:06> RoyGoldman: d
+RoyGoldman tried command tiger
+RoyGoldman tried command chan
+(Tiger)<22:42:21> RoyGoldman: ad
+(Tiger)<22:42:21> RoyGoldman: d
+(Tiger)<22:42:22> RoyGoldman: d
+(Tiger)<22:42:22> RoyGoldman: d
+(Tiger)<22:42:22> RoyGoldman: d
+(Tiger)<22:42:22> RoyGoldman: d
+(Tiger)<22:42:23> RoyGoldman: d
+(Tiger)<22:42:27> RoyGoldman: d/u
+RoyGoldman tried command u
+(Tiger)<22:42:31> RoyGoldman: dhdhd
+RoyGoldman tried command chan
+(CHAN)<22:42:34> RoyGoldman: d
+(CHAN)<22:42:34> RoyGoldman: d
+(CHAN)<22:42:35> RoyGoldman: d
+(CHAN)<22:42:35> RoyGoldman: d
+(CHAN)<22:42:35> RoyGoldman: d
+RoyGoldman tried command chan
+(Tiger)<22:42:40> RoyGoldman: f
+(Tiger)<22:42:41> RoyGoldman: f
+(Tiger)<22:42:41> RoyGoldman: f
+(Tiger)<22:42:41> RoyGoldman: f
+(Tiger)<22:42:41> RoyGoldman: f
+(Tiger)<22:42:42> RoyGoldman: f
+(Tiger)<22:42:42> RoyGoldman: f
+RoyGoldman tried command chan
+(CHAN)<22:42:50> RoyGoldman: d
+(CHAN)<22:42:51> RoyGoldman: d
+(CHAN)<22:42:51> RoyGoldman: d
+(CHAN)<22:42:51> RoyGoldman: d
+(CHAN)<22:42:52> RoyGoldman: d
+RoyGoldman tried command chan
+(NICK)<22:42:57> RoyGoldman: d
+(NICK)<22:42:57> RoyGoldman: d
+(NICK)<22:42:57> RoyGoldman: d
+(NICK)<22:42:57> RoyGoldman: d
+(NICK)<22:42:58> RoyGoldman: d
+RoyGoldman tried command chan
+(Tiger)<22:43:02> RoyGoldman: d
+(Tiger)<22:43:02> RoyGoldman: d
+(Tiger)<22:43:02> RoyGoldman: d
+(Tiger)<22:43:02> RoyGoldman: d
+RoyGoldman tried command chan
+(Tiger)<22:43:07> RoyGoldman: f
+(Tiger)<22:43:08> RoyGoldman: f
+(Tiger)<22:43:08> RoyGoldman: f
+(Tiger)<22:43:08> RoyGoldman: f
+(Tiger)<22:43:09> RoyGoldman: f
+(Tiger)<22:43:09> RoyGoldman: f
+(Tiger)<22:43:09> RoyGoldman: f
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 31/08/12 22:45:40. Server IP: Lucus/192.168.1.104
+Server Running
+Started! --- Server Start Time: 31/08/12 22:46:35. Server IP: Lucus/192.168.1.104
+Server Running
+Started! --- Server Start Time: 31/08/12 22:46:44. Server IP: Lucus/192.168.1.104
+Server Running
+RoyGoldman connected! Thread id: 0. 31/08/12 22:46:50 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+RoyGoldman tried command chan
+RoyGoldman tried command chan
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 02/09/12 09:10:20. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman connected! Thread id: 0. 02/09/12 09:10:55 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(tiger)<09:11:13> RoyGoldman: asdf
+(tiger)<09:11:13> RoyGoldman: d
+(tiger)<09:11:13> RoyGoldman: d
+RoyGoldman tried command chan
+RoyGoldman tried command chan
+(tiger)<09:11:24> RoyGoldman: asd
+(tiger)<09:11:24> RoyGoldman: d
+(tiger)<09:11:24> RoyGoldman: d
+RoyGoldman tried command chan
+(tiger)<09:11:36> RoyGoldman: sdf
+(tiger)<09:11:37> RoyGoldman: d
+(tiger)<09:11:37> RoyGoldman: d
+(tiger)<09:11:37> RoyGoldman: d
+(tiger)<09:11:37> RoyGoldman: dd
+(tiger)<09:11:38> RoyGoldman: d
+(tiger)<09:11:38> RoyGoldman: d
+(tiger)<09:11:38> RoyGoldman: dd
+(tiger)<09:11:39> RoyGoldman: d
+(tiger)<09:11:44> RoyGoldman: d
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 02/09/12 09:12:06. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman connected! Thread id: 0. 02/09/12 09:12:27 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(tiger)<09:12:32> RoyGoldman: sd
+(tiger)<09:12:33> RoyGoldman: d
+(tiger)<09:12:33> RoyGoldman: d
+RoyGoldman tried command chan
+RoyGoldman tried command has
+(lobby)<09:12:41> RoyGoldman: d
+(lobby)<09:12:41> RoyGoldman: d
+(lobby)<09:12:41> RoyGoldman: dd
+(lobby)<09:12:42> RoyGoldman: d
+RoyGoldman tried command chan
+(tiger)<09:12:48> RoyGoldman: d
+(tiger)<09:12:48> RoyGoldman: d
+(tiger)<09:12:49> RoyGoldman: d
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 02/09/12 09:15:03. Server IP: Lucus/172.30.123.23
+Could not bind to Socket!
+Startup failed.
+Started! --- Server Start Time: 02/09/12 09:15:08. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman connected! Thread id: 0. 02/09/12 09:15:17 with an ip of 192.168.1.104.
+RoyGoldman tried command chan
+(a)<09:15:25> RoyGoldman: asd
+(a)<09:15:26> RoyGoldman: d
+RoyGoldman tried command chan
+(f)<09:15:31> RoyGoldman: jdjdjd
+(f)<09:15:32> RoyGoldman: 
+(f)<09:15:32> RoyGoldman: d
+(f)<09:15:32> RoyGoldman: d
+RoyGoldman tried command chan
+(a)<09:15:36> RoyGoldman: d
+(a)<09:15:37> RoyGoldman: djdjd
+(a)<09:15:37> RoyGoldman: d
+(a)<09:15:38> RoyGoldman: d
+RoyGoldman has disconnected. (IP: 192.168.1.104)
+Started! --- Server Start Time: 05/09/12 12:12:09. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman connected! Thread id: 0. 05/09/12 12:12:13 with an ip of 127.0.0.1.
+RoyGoldman tried command chan
+(NIck)<12:12:23> RoyGoldman: sdf
+(NIck)<12:12:24> RoyGoldman: d
+(NIck)<12:12:24> RoyGoldman: d
+(NIck)<12:12:24> RoyGoldman: d
+(NIck)<12:12:24> RoyGoldman: d
+(NIck)<12:12:25> RoyGoldman: dd
+(NIck)<12:12:25> RoyGoldman: d
+(NIck)<12:12:25> RoyGoldman: d
+(NIck)<12:12:26> RoyGoldman: d
+(NIck)<12:12:26> RoyGoldman: dd
+(NIck)<12:12:26> RoyGoldman: d
+(NIck)<12:12:26> RoyGoldman: d
+(NIck)<12:12:26> RoyGoldman: d
+(NIck)<12:12:27> RoyGoldman: d
+(NIck)<12:12:27> RoyGoldman: d
+(NIck)<12:12:27> RoyGoldman: d
+(NIck)<12:12:27> RoyGoldman: d
+(NIck)<12:12:28> RoyGoldman: dd
+(NIck)<12:12:28> RoyGoldman: dsdf
+(NIck)<12:12:29> RoyGoldman: d
+(NIck)<12:12:29> RoyGoldman: d
+(NIck)<12:12:29> RoyGoldman: dd
+(NIck)<12:12:30> RoyGoldman: d
+RoyGoldman tried command chan
+(Tiger)<12:12:35> RoyGoldman: asdf
+(Tiger)<12:12:35> RoyGoldman: d
+(Tiger)<12:12:35> RoyGoldman: dd
+RoyGoldman tried command chan
+(NIck)<12:12:40> RoyGoldman: d
+(NIck)<12:12:40> RoyGoldman: d
+(NIck)<12:12:40> RoyGoldman: d
+(NIck)<12:12:40> RoyGoldman: d
+RoyGoldman tried command chan
+(Tiger)<12:12:47> RoyGoldman: d
+(Tiger)<12:12:47> RoyGoldman: djd
+(Tiger)<12:12:47> RoyGoldman: d
+(Tiger)<12:12:48> RoyGoldman: d
+(Tiger)<12:12:48> RoyGoldman: d
+(Tiger)<12:12:48> RoyGoldman: d
+(Tiger)<12:12:48> RoyGoldman: d
+(Tiger)<12:12:49> RoyGoldman: d
+(Tiger)<12:12:49> RoyGoldman: d
+(Tiger)<12:12:49> RoyGoldman: d
+(Tiger)<12:12:49> RoyGoldman: d
+(Tiger)<12:12:50> RoyGoldman: s
+(Tiger)<12:12:50> RoyGoldman: s
+(Tiger)<12:12:51> RoyGoldman: t
+(Tiger)<12:12:51> RoyGoldman: t
+(Tiger)<12:12:51> RoyGoldman: t
+(Tiger)<12:12:51> RoyGoldman: tt
+(Tiger)<12:12:52> RoyGoldman: t
+(Tiger)<12:12:53> RoyGoldman: tdf
+(Tiger)<12:12:53> RoyGoldman: d
+(Tiger)<12:12:53> RoyGoldman: fd
+(Tiger)<12:12:53> RoyGoldman: fs
+(Tiger)<12:12:53> RoyGoldman: f
+(Tiger)<12:12:54> RoyGoldman: asdf
+(Tiger)<12:12:54> RoyGoldman: a
+(Tiger)<12:12:54> RoyGoldman: sdf
+(Tiger)<12:12:54> RoyGoldman: asd
+(Tiger)<12:12:54> RoyGoldman: f
+(Tiger)<12:12:54> RoyGoldman: df
+(Tiger)<12:12:54> RoyGoldman: d
+(Tiger)<12:12:55> RoyGoldman: f
+(Tiger)<12:12:55> RoyGoldman: d
+(Tiger)<12:12:55> RoyGoldman: s
+(Tiger)<12:12:55> RoyGoldman: fasdf
+(Tiger)<12:12:56> RoyGoldman: asd
+(Tiger)<12:12:56> RoyGoldman: f
+(Tiger)<12:12:56> RoyGoldman: 
+(Tiger)<12:12:56> RoyGoldman: df
+(Tiger)<12:12:57> RoyGoldman: 
+(Tiger)<12:12:57> RoyGoldman: fa
+(Tiger)<12:12:57> RoyGoldman: sd
+(Tiger)<12:12:57> RoyGoldman: f
+(Tiger)<12:12:57> RoyGoldman: f
+(Tiger)<12:12:58> RoyGoldman: f
+(Tiger)<12:12:58> RoyGoldman: asdf
+(Tiger)<12:12:58> RoyGoldman: ads
+(Tiger)<12:12:59> RoyGoldman: fs
+(Tiger)<12:12:59> RoyGoldman: dffd
+(Tiger)<12:13:00> RoyGoldman: asd
+(Tiger)<12:13:00> RoyGoldman: f
+(Tiger)<12:13:01> RoyGoldman: f
+(Tiger)<12:13:01> RoyGoldman: f
+RoyGoldman tried command u
+RoyGoldman2 connected! Thread id: 1. 05/09/12 12:15:09 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+(NIck)<12:15:38> RoyGoldman2: d
+(NIck)<12:15:38> RoyGoldman2: d
+(NIck)<12:15:38> RoyGoldman2: d
+(NIck)<12:15:39> RoyGoldman2: d
+RoyGoldman2 tried command chan
+(Tiger)<12:15:47> RoyGoldman2: dd
+(Tiger)<12:15:47> RoyGoldman2: d
+(Tiger)<12:15:47> RoyGoldman2: d
+(Tiger)<12:15:48> RoyGoldman2: d
+(Tiger)<12:15:48> RoyGoldman2: d
+(Tiger)<12:15:48> RoyGoldman2: d
+(Tiger)<12:15:50> RoyGoldman2: d/u
+RoyGoldman2 tried command u
+RoyGoldman2 tried command nick
+RoyGoldman2 changed their nick to RoyGoldman^BoT.
+RoyGoldman^BoT tried command u
+Started! --- Server Start Time: 05/09/12 12:55:55. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 12:56:05 with an ip of 127.0.0.1.
+RoyGoldman connected! Thread id: 1. 05/09/12 12:56:47 with an ip of 127.0.0.1.
+FAILURE ON READ: THREAD 1!!
+RoyGoldman connected! Thread id: 2. 05/09/12 12:56:48 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman tried command chan
+RoyGoldman tried command u
+(Tiger)<12:57:07> RoyGoldman: ~RoyGoldman
+RoyGoldman2 tried command nick
+RoyGoldman2 changed their nick to RoY^GoLdMaN^BoT.
+RoY^GoLdMaN^BoT tried command cd
+(Tiger)<12:58:03> RoY^GoLdMaN^BoT: 
+RoY^GoLdMaN^BoT tried command dc
+RoY^GoLdMaN^BoT has disconnected. (IP: 127.0.0.1)
+RoyGoldman tried command dc
+RoyGoldman has disconnected. (IP: 127.0.0.1)
+Started! --- Server Start Time: 05/09/12 12:58:26. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:02:37. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:02:59. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman connected! Thread id: 0. 05/09/12 13:03:39 with an ip of 127.0.0.1.
+RoyGoldman connected! Thread id: 1. 05/09/12 13:03:40 with an ip of 127.0.0.1.
+RoyGoldman tried command server
+Started! --- Server Start Time: 05/09/12 13:05:29. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman connected! Thread id: 0. 05/09/12 13:06:27 with an ip of 127.0.0.1.
+RoyGoldman tried command server
+Started! --- Server Start Time: 05/09/12 13:10:37. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:11:04. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:14:36. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:14:46. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:32:27. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:33:28. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:37:57. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 13:38:09. Server IP: Lucus/172.30.123.23
+Server Running
+Stopping Server
+Server Stopped
+RoyGoldman2 connected! Thread id: 0. 05/09/12 13:44:35 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+Started! --- Server Start Time: 05/09/12 13:53:50. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 13:54:00 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command u
+(Tiger)<13:54:12> RoyGoldman2: hello
+(Tiger)<13:54:13> RoyGoldman2: dhd
+(Tiger)<13:54:13> RoyGoldman2: d
+(Tiger)<13:54:13> RoyGoldman2: d
+(Tiger)<13:54:13> RoyGoldman2: d
+(Tiger)<13:54:14> RoyGoldman2: d
+(Tiger)<13:54:14> RoyGoldman2: 
+RoyGoldman2 tried command server
+RoyGoldman2 tried command server
+Started! --- Server Start Time: 05/09/12 13:55:47. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 13:55:51 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+(tiger)<13:56:03> RoyGoldman2: 
+(tiger)<13:56:03> RoyGoldman2: d
+(tiger)<13:56:03> RoyGoldman2: d
+(tiger)<13:56:03> RoyGoldman2: d
+(tiger)<13:56:04> RoyGoldman2: dd
+(tiger)<13:56:04> RoyGoldman2: 
+(tiger)<13:56:04> RoyGoldman2: dd
+(tiger)<13:56:05> RoyGoldman2: d
+RoyGoldman2 tried command stop
+RoyGoldman2 tried command server
+Stopping Server
+Server Stopped
+RoyGoldman2 connected! Thread id: 1. 05/09/12 13:56:26 with an ip of 127.0.0.1.
+RoyGoldman2 has disconnected. (IP: 127.0.0.1)
+Started! --- Server Start Time: 05/09/12 13:58:12. Server IP: Lucus/172.30.123.23
+Server Running
+Stopping Server
+Server Stopped
+RoyGoldman2 connected! Thread id: 0. 05/09/12 13:58:21 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command server
+RoyGoldman2 has disconnected. (IP: 127.0.0.1)
+Started! --- Server Start Time: 05/09/12 14:02:54. Server IP: Lucus/172.30.123.23
+Server Running
+Stopping Server
+Server Stopped
+Stopping Server
+Server Stopped
+Started! --- Server Start Time: 05/09/12 14:03:32. Server IP: Lucus/172.30.123.23
+Server Running
+Stopping Server
+Server Stopped
+Started! --- Server Start Time: 05/09/12 14:03:59. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 14:04:05 with an ip of 127.0.0.1.
+RoyGoldman2 tried command server
+Stopping Server
+Server Stopped
+Started! --- Server Start Time: 05/09/12 14:05:12. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 14:05:16 with an ip of 127.0.0.1.
+RoyGoldman2 tried command server
+Stopping Server
+Server Stopped
+Started! --- Server Start Time: 05/09/12 14:05:57. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 14:06:01 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command server
+Stopping Server
+Server Stopped
+Started! --- Server Start Time: 05/09/12 14:06:39. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 14:06:45 with an ip of 127.0.0.1.
+RoyGoldman2 tried command server
+Stopping Server
+Server Stopped
+Started! --- Server Start Time: 05/09/12 14:06:58. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 14:07:02 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command server
+Stopping Server
+Server Stopped
+RoyGoldman2 has disconnected. (IP: 127.0.0.1)
+Started! --- Server Start Time: 05/09/12 14:59:55. Server IP: Lucus/172.30.123.23
+Server Running
+Started! --- Server Start Time: 05/09/12 15:13:08. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:13:16 with an ip of 127.0.0.1.
+RoyGoldman2 tried command nick
+RoyGoldman2 changed their nick to RoyGoldman.
+Started! --- Server Start Time: 05/09/12 15:13:42. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:13:45 with an ip of 127.0.0.1.
+RoyGoldman2 tried command u
+Started! --- Server Start Time: 05/09/12 15:15:38. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:15:41 with an ip of 127.0.0.1.
+RoyGoldman2 tried command u
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command op
+RoyGoldman2 tried command server
+RoyGoldman2 tried command u
+RoyGoldman2 has disconnected. (IP: 127.0.0.1)
+RoyGoldman2 connected! Thread id: 1. 05/09/12 15:19:33 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command u
+RoyGoldman2 tried command nick
+RoyGoldman2 changed their nick to tiger.
+tiger tried command u
+tiger tried command nick
+tiger changed their nick to RoyGoldman2.
+RoyGoldman2 has disconnected. (IP: 127.0.0.1)
+Started! --- Server Start Time: 05/09/12 15:38:11. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:38:14 with an ip of 127.0.0.1.
+RoyGoldman2 tried command server
+Started! --- Server Start Time: 05/09/12 15:38:37. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:38:50 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+(tiger)<15:38:58> RoyGoldman2: hello
+(tiger)<15:38:58> RoyGoldman2: asd
+(tiger)<15:38:58> RoyGoldman2: d
+(tiger)<15:38:59> RoyGoldman2: d
+(tiger)<15:38:59> RoyGoldman2: d
+RoyGoldman2 tried command tiuger
+(tiger)<15:39:03> RoyGoldman2: tiger
+RoyGoldman2 tried command server
+RoyGoldman2 tried command u
+RoyGoldman2 tried command op
+Started! --- Server Start Time: 05/09/12 15:41:04. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:41:06 with an ip of 127.0.0.1.
+RoyGoldman2 tried command op
+Started! --- Server Start Time: 05/09/12 15:41:19. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:41:26 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command op
+RoyGoldman2 tried command server
+RoyGoldman2 tried command u
+RoyGoldman2 tried command u
+RoyGoldman2 has disconnected. (IP: 127.0.0.1)
+Started! --- Server Start Time: 05/09/12 15:44:15. Server IP: Lucus/172.30.123.23
+Server Running
+roygoldman is now globally opped!
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:44:34 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command nick
+RoyGoldman2 changed their nick to roygoldman.
+roygoldman tried command u
+Started! --- Server Start Time: 05/09/12 15:47:09. Server IP: Lucus/172.30.123.23
+Server Running
+RoyGoldman2 connected! Thread id: 0. 05/09/12 15:47:11 with an ip of 127.0.0.1.
+RoyGoldman2 tried command chan
+RoyGoldman2 tried command op
+roygoldman is now globally opped!
+RoyGoldman2 tried command nick
+RoyGoldman2 changed their nick to RoyGoldman.
+RoyGoldman tried command chan
+RoyGoldman tried command u
+RoyGoldman has disconnected. (IP: 127.0.0.1)
