@@ -6,7 +6,7 @@ import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Vector;
+//import java.util.Vector;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class ClientThread extends Thread {
@@ -23,11 +23,15 @@ public class ClientThread extends Thread {
 	ConcurrentLinkedQueue<String> chats;
 	ChannelThread channel = null;
 	boolean inRoom = false;
+	public ChatServer server;
+	public Command command;
 	
-	public ClientThread(Socket s,int id) {
+	public ClientThread(Socket s,int id, ChatServer chatServer) {
 		this.s = s;
 		running = true;
 		this.id = id;
+		server = chatServer;
+		command = server.cReader.sCommand;
 	}
 	
 	public void run(){
@@ -49,8 +53,7 @@ public class ClientThread extends Thread {
 						if (isCommand(line)){
 							commandline = line.substring(line.indexOf('/') + 1);
 							commandarray = commandline.split(" ");
-							//runCommand(commandarray);
-							Command.userRun(commandarray, this);
+							command.userRun(commandarray, this);
 						} else {
 							if (inRoom){
 								send = timeStamp() + nickname+ ": " + line;
@@ -108,7 +111,7 @@ public class ClientThread extends Thread {
 	public void userDisconnect() {
 		running = false;
 		channel.dropUser(this);
-		ChatServer.closeConnection(this);
+		server.closeConnection(this);
 		chats.add(nickname + " has left the server!");
 		ConsolePrinter.write(nickname + " has disconnected. (IP: " + ip.toString().substring(1) + ")");
 	}
@@ -148,7 +151,6 @@ public class ClientThread extends Thread {
 	}
 	
 	public boolean isNickSend(String line){
-		
 		if(line.contains("~") && line.indexOf('~') == 0){
 				return true;
 		}
@@ -160,11 +162,19 @@ public class ClientThread extends Thread {
 	}
 	
 	public void setNick(String n, boolean a) {
+
 		if (a){
 			ConsolePrinter.write(nickname + " changed their nick to " + n + ".");
-			chats.add(nickname + " is now known as " + n + ".");
+			if (inRoom){
+				chats.add(nickname + " is now known as " + n + ".");
+				//if(channel.isOpped(nickname)){
+				//	channel.deOp(nickname);
+				//	channel.addOp(n);
+				//}
+			}
 		}
-			nickname = n;
+	
+		nickname = n;
 	}
 	
 	public void reloadUsers(){

@@ -10,10 +10,6 @@ public class ConsolePrinter {
 
 	}
 	
-	public static void main(String[] args){
-		write(args[1]);
-	}
-	
 	public static void write(String t){
 		  // Create file 
 		
